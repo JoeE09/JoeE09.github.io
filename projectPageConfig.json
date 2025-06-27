@@ -1,0 +1,37 @@
+{
+  "vba-intellisense": {
+    "locked": true,
+    "outputFile": "src/pages/projects/VbaIntellisense.tsx",
+    "lastGenerated": "2025-06-27T16:21:51.911Z"
+  },
+  "excel-data-tools": {
+    "locked": true,
+    "outputFile": "src/pages/projects/ExcelDataTools.tsx",
+    "lastGenerated": "2025-06-27T15:22:37.540Z"
+  },
+  "abeka-qa-automations": {
+    "locked": true,
+    "outputFile": "src/pages/projects/AbekaQaAutomations.tsx",
+    "lastGenerated": "2025-06-27T16:32:50.799Z"
+  },
+  "portfolio-website": {
+    "locked": true,
+    "outputFile": "src/pages/projects/PortfolioWebsite.tsx",
+    "lastGenerated": "2025-06-24T15:27:00.633Z"
+  },
+  "forecasting-automation-pipeline": {
+    "locked": false,
+    "outputFile": "src/pages/projects/ForecastingAutomationPipeline.tsx",
+    "lastGenerated": "2025-06-27T16:43:53.507Z"
+  },
+  "sleep-tracker": {
+    "locked": true,
+    "outputFile": "src/pages/projects/SleepTracker.tsx",
+    "lastGenerated": "2025-06-25T02:35:57.091Z"
+  },
+  "senior-project": {
+    "locked": true,
+    "outputFile": "src/pages/projects/SeniorProject.tsx",
+    "lastGenerated": "2025-06-27T02:39:03.779Z"
+  }
+}

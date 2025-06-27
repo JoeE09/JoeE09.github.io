@@ -1,0 +1,3 @@
+I studied mechanical engineering, but my passion lies in applying systems thinking to design tools that automate tedious tasks, extract insights from data, and streamline workflows. I've built automation and data systems using Excel, custom software add-ins, and personal productivity apps — all focused on saving time and reducing friction.
+
+I'm a trained mechanical engineer that specializes in designing tools to eliminate repetitive tasks and extract insights from data, whether it's extending engineering capabilities or just streamlining operations for any business. I've developed custom software add-ins, automation systems, intuitive interfaces, and personal tools to enhance productivity and make both work and life simpler.

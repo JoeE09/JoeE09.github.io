@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Test Data Analysis Add-in",
+    "description": "Custom Excel add-in for batch data importing and plotting to streamline engine test data validation",
+    "imageUrl": "/images/projectCards/excel-data-tools.png",
+    "hoverGif": "/images/projectCards/excel-data-tools.mp4",
+    "status": "Complete",
+    "company": "Eagle Systems"
+  },
+  {
+    "title": "VBA IntelliSense",
+    "description": "Custom IntelliSense tool for the VBA editor using C# and WinForms",
+    "imageUrl": "/images/projectCards/vba-intellisense.png",
+    "hoverGif": "/images/projectCards/vba-intellisense.mp4",
+    "status": "Complete",
+    "company": "Personal"
+  },
+  {
+    "title": "Abeka QA Automations",
+    "description": "A set of custom automations for the Abeka QA team to manage data more efficiently",
+    "imageUrl": "/images/projectPages/qa-json-interface.png",
+    "status": "Complete",
+    "company": "Abeka"
+  },
+  {
+    "title": "Forecasting Automation Pipeline",
+    "description": "A data pipeline in Excel to easily manage forecasting and call center demand data",
+    "imageUrl": "/images/projectPages/abeka-forecasting-pipeline.png",
+    "status": "Complete",
+    "company": "Abeka"
+  },
+  {
+    "title": "Sleep Trend Analyzer",
+    "description": "Collects, analyzes, and visualizes sleep data to identify links between habits and sleep",
+    "imageUrl": "/images/projectCards/sleep-icon.svg",
+    "hoverGif": "/videos/logging-api.mp4",
+    "status": "In Progress",
+    "company": "Personal"
+  },
+  {
+  "title": "Portfolio Website",
+  "description": "Custom-built site to showcase projects and technical skills using React, Tailwind, and Vite",
+  "imageUrl": "/images/projectPages/portfolio-website-banner.png",
+  "hoverGif": "/images/projectPages/portfolio-markdown-translation.png",
+  "status": "Complete",
+  "company": "Personal"
+}
+]
