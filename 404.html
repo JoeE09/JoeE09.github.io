@@ -1,13 +1,62 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found</title>
+    <style>
+      body {
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        background-color: #f0f0f0;
+        color: #161616;
+        padding: 0;
+        margin: 0;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 3em;
+        color: #008f5c;
+      }
+      p {
+        text-align: center;
+      }
+      div {
+        margin: 0;
+        width: 100%;
+        margin-top: 50px;
+        background-color: #dddddd;
+        padding: 50px;
+        text-align: center;
+      }
+      a {
+        color: #999999;
+      }
+      a:hover {
+        color: #aaaaaa;
+      }
+    </style>
+  </head>
   <body>
-    <h1>404 - Page Not Found</h1>
-    <p>Sorry, the page you are looking for does not exist.</p>
-    <p>Please check the URL or return to the <a href="/">home page</a>.</p>
+    <div>
+      <h1
+        style="text-align: center; margin-top: 50px; font-size: 4em; color: #008f5c;"
+      >
+      404 - Page Not Found</h1>
+      <p
+        style="font-size: 1.5em;"
+      >
+      Sorry, the page you are looking for does not exist.</p>
+      <p
+        style="color: #777777;"
+      >
+      Please check the URL or return to the <a href="/">home page</a>.</p>
+    </div>
     <script>
       // Redirect to home after 5 seconds
       setTimeout(() => {
         window.location.href = '/';
-      }, 4000);
+      }, 2000);
     </script>
   </body>
 </html>
