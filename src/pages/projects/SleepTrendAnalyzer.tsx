@@ -73,7 +73,7 @@ export default function SleepTrendAnalyzer() {
                 <li>I built a custom mobile interface in Apple Shortcuts for logging sleep data that integrates directly with Google Sheets via Apps Script</li>
                 <li>I have a Python script scaffolded that uses Flask to pull from the Fitbit API and store the data in a database</li>
                 <li>I have the ESP32 board setup purchased, but not yet set up</li>
-                <li>I have a few months' worth of collected data to analyze'</li>
+                <li>I have a few months' worth of collected data to analyze</li>
               </ul>
             </div>
             <div className="">
