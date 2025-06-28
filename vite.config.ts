@@ -11,15 +11,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     mdx(),
-    yaml(),
-    {
-      name: 'copy-index-to-404',
-      generateBundle(_, bundle) {
-        if ('index.html' in bundle) {
-          bundle['404.html'] = { ...bundle['index.html'] };
-        }
-      },
-    },
+    yaml()
   ],
   base: "/", // Set base path for GitHub Pages
   resolve: {
