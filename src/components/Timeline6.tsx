@@ -4,7 +4,7 @@ const timelineData = [
   {
     title: "Early Robotics / Khan Academy",
     years: "Ages 9-14",
-    description: "Participated in FLL Robotics and Khan Academy game programming. Developed logical and math-based thinking.",
+    description: "Participated in <a href='https://www.firstinspires.org/robotics/fll' target='_blank' style='text-decoration: underline;'>FLL robotics</a> and <a href='https://www.khanacademy.org/profile/JoeE09/' target='_blank' style='text-decoration: underline;'>Khan Academy</a> game programming. Developed logical and math-based thinking.",
     bullets: [
       "Learned basic team collaboration skills",
       "Built and programmed robots with LEGO Mindstorms",
@@ -17,7 +17,7 @@ const timelineData = [
   {
     title: "FTC Robotics",
     years: "Ages 14–17",
-    description: "Did FIRST Robotics throughout high school, gaining more exposure to engineering principles.",
+    description: `Did <a href='https://www.firstinspires.org/robotics/ftc' target='_blank' style='text-decoration: underline;'>FIRST Robotics</a> throughout high school, gaining more exposure to engineering principles.`,
     bullets: [
       "Developed hands-on prototyping and 3D printing skills",
       "Designed CAD-based systems and assemblies",
@@ -88,13 +88,13 @@ export default function Timeline5() {
           <div className="flex flex-col flex-grow justify-center px-2">
             <h3 className="text-lg font-semibold text-customGreen">{item.title}</h3>
             <p className="text-sm text-gray-500">{item.years}</p>
-            <p className="text-sm text-gray-600">{item.description}</p>
+            <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: item.description }}></p>
           </div>
         </div>
         <div className="absolute backface-hidden h-full rotate-y-180 flex flex-col justify-center px-2">
           <ul className="list-disc list-outside pl-5 text-sm text-gray-600 text-left">
             {item.bullets.map((bullet, j) => (
-              <li key={j}>{bullet}</li>
+              <li key={j} dangerouslySetInnerHTML={{ __html: bullet }} />
             ))}
           </ul>
         </div>
