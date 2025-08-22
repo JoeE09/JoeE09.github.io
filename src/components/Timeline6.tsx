@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-const timelineData = [
+
+/*
+const allTimelineData = [
   {
     title: "Early Robotics / Khan Academy",
     years: "Ages 9-14",
@@ -54,15 +56,102 @@ const timelineData = [
     ],
     picture: "/images/projectPages/abeka-forecasting-pipeline.svg",
   }
+    {
+    title: "Junior Engineer (Eagle Systems)",
+    years: "June 2024 - May 2025",
+    description: "Tested and troubleshooted propulsion DAQ and test systems, building custom automations for data analysis and maintenance.",
+    bullets: [
+      "Learned basic team collaboration skills",
+      "Built and programmed robots with LEGO Mindstorms",
+      "Programmed interactive games in p5.js",
+      "Applied math, physics, and logic to build interactive games from scratch",
+      "Decided that engineering was cool",
+    ],
+    picture: "/images/TestStand_EagleSystems.jpg",
+  }
+    {
+    title: "Operations Analyst (Abeka)",
+    years: "Aug 2023-May 2024",
+    description: "Developed custom automations and data pipelines to streamline operations and quality assurance for the Abeka call center.",
+    bullets: [
+      "Streamlined business operations using Excel VBA and scripting",
+      "Developed personal tools with C#/Winforms and Python/TKinter",
+      "Used APIs and other integrations to extend software capabilities",
+      "Started building web apps with HTML/CSS/JavaScript and React",
+      "Working towards developing some mobile/web apps for myself and others",
+    ],
+    picture: "/images/projectPages/abeka-forecasting-pipeline.svg",
+  }
+];
+*/
+
+const timelineData = [
+  {
+    title: "Junior Engineer (Eagle Systems)",
+    years: "June 2024 - May 2025",
+    description: "Tested and troubleshooted propulsion DAQ and test systems, building custom automations for data analysis and maintenance.",
+    bullets: [
+      "Troubleshooted instrumentation/software failures",
+      "Performed routine maintenance and calibration",
+      "Developed automated maintenance tracker with Power Automate",
+      "Programmed Excel Add-in to streamline analysis",
+    ],
+    picture: "/images/TestStand_EagleSystems.jpg",
+  },
+  {
+    title: "Operations Analyst (Abeka)",
+    years: "Aug 2023-May 2024",
+    description: "Developed custom automations and data pipelines to streamline operations and quality assurance for the Abeka call center.",
+    bullets: [
+      "Wrote Excel/Google scripts/macros to automate reporting",
+      "Created data pipeline with Power Query, Power Automate, Power Pivot",
+      "Built custom dashboards and reports in Excel and some Power BI",
+      "Developed analytics to monitor agent performance"
+    ],
+    picture: "/images/projectPages/abeka-forecasting-pipeline.svg",
+  },
+  {
+    title: "Mechanical Engineering Degree",
+    years: "2020–2024",
+    description: "Earned B.S. with 4.00 GPA, with computer science and math minors. Passed FE mechanical exam and obtained CMfgT certification.",
+    bullets: [
+      "Participated in school design contests",
+      "Gained proficiency with AutoCAD and SolidWorks",
+      "Studied manufacturing and gained hands-on fabrication experience",
+      "Wrote Python scripts to solve complex problems",
+      "Developed an overhead crane system for my senior design project"
+    ],
+    picture: "/images/crane-section2.png",
+  },
+  {
+    title: "Other Projects",
+    years: "Ages 14-Present",
+    description: `Involved myself in personal engineering pursuits, from FTC robotics in high school to now developing a smart home environment controller and home lab.`,
+    bullets: [
+      "Wrote FTC robotics programs with Java and Android Studio",
+      "Made 3D-printed robot parts designed in Creo / Fusion 360",
+      "Developed custom computer programs for productivity",
+      "Designed a multi-room smart home environment controller",
+      "Built custom web apps and interfaces"
+    ],
+    picture: "/images/IMG_0400.JPG",
+  }
 ];
 
-export default function Timeline5() {
+export default function Timeline6() {
 
-  const [flipped, setFlipped] = useState<number | null>(null);
+  const [flipped, setFlipped] = useState<boolean[]>(
+    () => Array(timelineData.length).fill(false)
+  );
 
   const toggleFlip = (index: number) => {
-    setFlipped((prev) => (prev === index ? null : index));
-  }
+    setFlipped(prev => {
+      const next = [...prev];
+      next[index] = !next[index];
+      return next;
+    });
+  };
+
 
   return (
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 justify-items-center items-center w-full">
@@ -74,7 +163,7 @@ export default function Timeline5() {
       <div
         className={`group relative w-full h-full
                     transition-transform duration-700 transform-style preserve-3d
-                    ${flipped === i ? "rotate-y-180" : ""}`}
+                    ${flipped[i] ? "rotate-y-180" : ""}`}
       >
         <div className="absolute inset-0 inset-y-3 shadow-md rounded-lg bg-white z-0 
           transition duration-300 group-hover:scale-105" />
