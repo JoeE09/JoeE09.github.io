@@ -109,36 +109,45 @@ export default function HomePage() {
 
       {/* Technologies */}
       {<section id="technologies" className="bg-white px-6 md:px-12 pb-12 pt-6 flex flex-col items-center">
-        <h3 className="home-header mb-2">My Skills</h3>
-        <p className="text-md text-gray-500 text-center mb-16">
-          Some of the top skills and technologies I work with
-        </p>
-        
+        <h3 className="home-header mb-2">Capabilities & Tools</h3>
+        {/* <p className="text-md text-gray-500 text-center mb-16">
+          
+        </p> */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="mb-6">
             <h2 className="text-2xl font-semibold text-customGreen mb-4 text-center ">
-              Data and Automation
+              Engineering & Tools
             </h2>
             <SkillsList 
-              skills={["Excel", "VBA", "Power Query", "PowerBI", "Google Apps Script", "Power Automate"]}
+              skills={["AutoCAD", "SolidWorks", "Fusion 360", "Creo Parametric", "FEA basics", "GD&T", "Drafting & blueprints", "DFM/DFA", "Fabrication", "Hand & power tools"]}
             />
           </div>
           
           <div className="mb-6">
             <h2 className="text-2xl font-semibold text-customGreen mb-4 text-center ">
-              Programming
+              Controls & Instrumentation
             </h2>
             <SkillsList 
-              skills={["Python", "JavaScript", "C#", "Java", "C++", "MATLAB"]}
+              skills={["DAQ systems", "Sensors & transducers", "PLCs", "HMI/SCADA basics", "Smart relays", "Raspberry Pi", "ESP32", "MQTT"]}
+            />
+          </div>
+          <div className="mb-6">
+            <h2 className="text-2xl font-semibold text-customGreen mb-4 text-center ">
+              Data & Analytics
+            </h2>
+            <SkillsList 
+              skills={["Excel", "VBA", "Power Query", "Power Pivot", "Power BI", "Power Automate", "Apps Script", "Python", "Pandas", "MATLAB", "SQL", "REST APIs", "Automation scripting", "Add-ins"]}
             />
           </div>
           <div className="">
             <h2 className="text-2xl font-semibold text-customGreen mb-4 text-center ">
-              Web Interfaces
+              Programming
             </h2>
             <SkillsList 
-              skills={["HTML","CSS","JavaScript", "TypeScript", "React", "Tailwind CSS", "Vite", "Node.js"]}
+              skills={["Java", "C++", "C#", "JavaScript", "TypeScript", "HTML/CSS", "React", "Git", "Linux", "Shell scripts", "Web apps"]}
             />
           </div>
+        </div>
       </section>}
       
     </div>
