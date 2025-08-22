@@ -1,9 +1,9 @@
 import ProjectsSection from "@/components/ProjectsSection";
 import { useState, useEffect, useRef } from "react";
 import AnimatedText from "@/components/AnimatedText";
-import TechnologiesList from "@/components/TechnologiesList";
 import Timeline6 from "@/components/Timeline6";
 import MainSkills2 from "@/components/MainSkills2";
+import SkillsList from "@/components/SkillsList";
 
 export default function HomePage() {
   const [cursorPos, setCursorPos] = useState({ x: -100, y: -100 });
@@ -61,26 +61,17 @@ export default function HomePage() {
 
         <div className="mx-auto z-10 relative text-center">
           <h2 className="text-5xl md:text-6xl font-extrabold mb-6 text-customGreen text-center drop-shadow-glow">
-            <AnimatedText delayStep={0.35} duration={0.7} translateAmount={-15}>Engineer. Automator. Developer.</AnimatedText>
-            {/* {["Engineer.", "Automator.", "Toolmaker."].map((word, idx) => (
-              <span
-                key={idx}
-                className="inline-block animate-fade-down drop-shadow-glow"
-                style={{ animationDelay: `${idx * 0.5}s`, animationFillMode: "both" }}
-              >
-                {word}&nbsp;
-              </span>
-            ))} */}
+            <AnimatedText delayStep={0.35} duration={0.7} translateAmount={-15}>Engineer. Automator. Analyst.</AnimatedText>
           </h2>
           <div className="max-w-2xl mx-auto text-center">
             <AnimatedText delayStep={0.05} baseDelay={1.5} translateAmount={-7} translateDirection = "X" duration={0.3}>
               <p className="text-lg text-gray-300 mb-4">
-                I'm Joseph — I engineer tools that make work faster and life simpler.
+                Developing smarter systems with automation, analytics, and engineering.
               </p>
             </AnimatedText>
             <AnimatedText delayStep={0.017} baseDelay={2.6} alternate="word" translateAmount={8} translateDirection = "X" duration={0.6}>
               <p className="text-md text-gray-400">
-                I'm a mechanical engineer that specializes in designing tools to eliminate repetitive tasks and extract insights from data, whether it's extending engineering capabilities or streamlining operations for any business. I've developed custom software add-ins, automation systems, intuitive interfaces, and personal tools to enhance productivity and make both work and life simpler.
+                I'm Joseph, a mechanical engineering graduate with a broad skillset encompassing mechanical design, controls, software development, automation, and data analytics. I develop tools and systems that enable teams to accomplish more with fewer errors, or create data pipelines that allow enable better decision-making. My work has been in engineering, business, and personal environments.
               </p>
             </AnimatedText>
           </div>
@@ -118,17 +109,17 @@ export default function HomePage() {
 
       {/* Technologies */}
       {<section id="technologies" className="bg-white px-6 md:px-12 pb-12 pt-6 flex flex-col items-center">
-        <h3 className="home-header mb-2">Technologies I Use</h3>
+        <h3 className="home-header mb-2">My Skills</h3>
         <p className="text-md text-gray-500 text-center mb-16">
-          Some of the technologies and tools I work with
+          Some of the top skills and technologies I work with
         </p>
         
           <div className="mb-6">
             <h2 className="text-2xl font-semibold text-customGreen mb-4 text-center ">
               Data and Automation
             </h2>
-            <TechnologiesList 
-              technologies={["Excel", "VBA", "Power Query", "PowerBI", "Google Apps Script", "Power Automate"]}
+            <SkillsList 
+              skills={["Excel", "VBA", "Power Query", "PowerBI", "Google Apps Script", "Power Automate"]}
             />
           </div>
           
@@ -136,59 +127,19 @@ export default function HomePage() {
             <h2 className="text-2xl font-semibold text-customGreen mb-4 text-center ">
               Programming
             </h2>
-            <TechnologiesList 
-              technologies={["Python", "JavaScript", "C#", "Java", "C++", "MATLAB"]}
+            <SkillsList 
+              skills={["Python", "JavaScript", "C#", "Java", "C++", "MATLAB"]}
             />
           </div>
           <div className="">
             <h2 className="text-2xl font-semibold text-customGreen mb-4 text-center ">
               Web Interfaces
             </h2>
-            <TechnologiesList 
-              technologies={["HTML","CSS","JavaScript", "TypeScript", "React", "Tailwind CSS", "Vite", "Node.js"]}
+            <SkillsList 
+              skills={["HTML","CSS","JavaScript", "TypeScript", "React", "Tailwind CSS", "Vite", "Node.js"]}
             />
           </div>
       </section>}
-
-      {/* Interests */}
-      {/* <section id="interests" className="bg-gray-100 px-6 md:px-12 py-16">
-        <h3 className="text-3xl font-semibold text-center text-customGreen mb-10">Interests</h3>
-
-        <div className="mx-auto space-y-10">
-
-          <div className="bg-white rounded-xl shadow-md p-6">
-          <h4 className="text-xl text-center font-semibold mb-4 text-gray-800">Piano</h4>
-          <div className="flex flex-col lg:flex-row gap-6">
-
-            <div className="aspect-[16/9] lg:w-1/2">
-              <iframe
-                src="https://www.youtube.com/embed/pCXl8jyikPc"
-                title="Piano Performance"
-                frameBorder="0"
-                allowFullScreen
-                className="w-full h-full rounded"
-              ></iframe>
-              <p className="text-sm text-gray-500">
-                A recording of me playing Transcendental Étude No. 12 ("Chasse-Neige") by Franz Liszt
-              </p>
-            </div>
-
-            <div className="lg:w-1/2 text-gray-700">
-              <p className="text-md mb-2">
-                
-              </p>
-            </div>
-          </div>
-        </div>
-
-          <div className="bg-white rounded-xl shadow-md p-4">
-            <h4 className="text-xl font-semibold mb-2 text-gray-800">Khan Academy Game</h4>
-            <div className="relative min-h-[400px] overflow-hidden">
-              <KABombDodge />
-            </div>
-          </div>
-        </div>
-      </section> */}
       
     </div>
   );
