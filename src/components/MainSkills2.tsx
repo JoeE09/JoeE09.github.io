@@ -48,6 +48,7 @@ const skillData = [
     ],
     icon: "images/notebook-pen.svg",
   }
+  
 ];
 
 export default function MainSkills2() {
@@ -87,7 +88,7 @@ export default function MainSkills2() {
         <div className="absolute backface-hidden h-full rotate-y-180 flex flex-col justify-center px-2">
           <ul className="list-disc list-outside pl-5 text-sm text-gray-600 text-left">
             {item.skills.map((bullet, j) => (
-              <li className="" key={j}>{bullet}</li>
+              <li className="mb-2" key={j}>{bullet}</li>
             ))}
           </ul>
         </div>

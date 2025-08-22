@@ -89,12 +89,12 @@ const timelineData = [
   {
     title: "Junior Engineer (Eagle Systems)",
     years: "June 2024 - May 2025",
-    description: "Tested and troubleshooted propulsion DAQ and test systems, building custom automations for data analysis and maintenance.",
+    description: "Tested and troubleshot propulsion DAQ and test systems, building custom automations for data analysis and maintenance.",
     bullets: [
-      "Troubleshooted instrumentation/software failures",
-      "Performed routine maintenance and calibration",
       "Developed automated maintenance tracker with Power Automate",
       "Programmed Excel Add-in to streamline analysis",
+      "Troubleshot instrumentation/software failures",
+      "Performed routine maintenance and calibration",
     ],
     picture: "/images/TestStand_EagleSystems.jpg",
   },
@@ -104,9 +104,9 @@ const timelineData = [
     description: "Developed custom automations and data pipelines to streamline operations and quality assurance for the Abeka call center.",
     bullets: [
       "Wrote Excel/Google scripts/macros to automate reporting",
-      "Created data pipeline with Power Query, Power Automate, Power Pivot",
-      "Built custom dashboards and reports in Excel and some Power BI",
-      "Developed analytics to monitor agent performance"
+      "Created forecasting pipeline with Power Query, Power Automate, Power Pivot",
+      "Built custom dashboards and reports in Excel/Power BI",
+      "Developed analytics to monitor agent performance and call center efficiency"
     ],
     picture: "/images/projectPages/abeka-forecasting-pipeline.svg",
   },
@@ -115,11 +115,10 @@ const timelineData = [
     years: "2020–2024",
     description: "Earned B.S. with 4.00 GPA, with computer science and math minors. Passed FE mechanical exam and obtained CMfgT certification.",
     bullets: [
-      "Participated in school design contests",
-      "Gained proficiency with AutoCAD and SolidWorks",
-      "Studied manufacturing and gained hands-on fabrication experience",
-      "Wrote Python scripts to solve complex problems",
-      "Developed an overhead crane system for my senior design project"
+      "Developed an overhead crane system for senior design project",
+      "Gained proficiency with AutoCAD and SolidWorks through projects and contests",
+      "Studied manufacturing and practiced hands-on fabrication",
+      "Wrote Python scripts to solve complex problems"
     ],
     picture: "/images/crane-section2.png",
   },
@@ -130,9 +129,8 @@ const timelineData = [
     bullets: [
       "Wrote FTC robotics programs with Java and Android Studio",
       "Made 3D-printed robot parts designed in Creo / Fusion 360",
-      "Developed custom computer programs for productivity",
-      "Designed a multi-room smart home environment controller",
-      "Built custom web apps and interfaces"
+      "Developed custom productivity tools and web apps",
+      "Designed a multi-room smart home environment controller"
     ],
     picture: "/images/IMG_0400.JPG",
   }
@@ -181,9 +179,9 @@ export default function Timeline6() {
           </div>
         </div>
         <div className="absolute backface-hidden h-full rotate-y-180 flex flex-col justify-center px-2">
-          <ul className="list-disc list-outside pl-5 text-sm text-gray-600 text-left">
+          <ul className="list-disc list-outside pl-5 text-sm text-gray-700 text-left">
             {item.bullets.map((bullet, j) => (
-              <li key={j} dangerouslySetInnerHTML={{ __html: bullet }} />
+              <li key={j} dangerouslySetInnerHTML={{ __html: bullet }} className="mb-3"/>
             ))}
           </ul>
         </div>
