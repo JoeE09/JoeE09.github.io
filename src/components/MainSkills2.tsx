@@ -5,8 +5,6 @@ const skillData = [
     title: "Engineering Foundations",
     description: "Engineering mindset for problem-solving, system design, and manufacturing applications",
     skills: [
-      "FE Mechanical Exam passed",
-      "CMfgT Certified (SME)",
       "AutoCAD drafting",
       "SolidWorks modeling",
       "Mathematical problem-solving",
@@ -48,16 +46,22 @@ const skillData = [
     ],
     icon: "images/notebook-pen.svg",
   }
-  
+
 ];
 
 export default function MainSkills2() {
 
-  const [flipped, setFlipped] = useState<number | null>(null);
-
-  const toggleFlip = (index: number) => {
-    setFlipped((prev) => (prev === index ? null : index));
-  }
+  const [flipped, setFlipped] = useState<boolean[]>(
+      () => Array(skillData.length).fill(false)
+    );
+  
+    const toggleFlip = (index: number) => {
+      setFlipped(prev => {
+        const next = [...prev];
+        next[index] = !next[index];
+        return next;
+      });
+    };
 
   return (
       <div className="flex flex-wrap gap-6 justify-center items-center w-full">
@@ -69,7 +73,7 @@ export default function MainSkills2() {
       <div
         className={`group relative w-full h-full
                     transition-transform duration-700 transform-style preserve-3d
-                    ${flipped === i ? "rotate-y-180" : ""}`}
+                    ${flipped[i] ? "rotate-y-180" : ""}`}
       >
         <div className="absolute inset-0 inset-y-3 shadow-md rounded-lg bg-white z-0 
           transition duration-300 group-hover:scale-105" />

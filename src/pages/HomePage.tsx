@@ -84,7 +84,7 @@ export default function HomePage() {
           Overview
         </h3>
         <p className="text-md text-gray-500 text-center mb-10">
-          A summary of my engineering journey and the skills I've developed along the way
+          A summary of my experience and education
         </p>
         <Timeline6 />
         <h3 className="text-3xl font-bold text-customGreen text-center mb-2 mt-10">
@@ -109,7 +109,7 @@ export default function HomePage() {
 
       {/* Technologies */}
       {<section id="technologies" className="bg-white px-6 md:px-12 pb-12 pt-6 flex flex-col items-center">
-        <h3 className="home-header mb-2">Capabilities & Tools</h3>
+        <h3 className="home-header mb-6">Capabilities & Tools</h3>
         {/* <p className="text-md text-gray-500 text-center mb-16">
           
         </p> */}
