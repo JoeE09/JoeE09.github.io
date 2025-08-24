@@ -64,10 +64,11 @@ export default function MainSkills2() {
         return next;
       });
     };
+    const cards = skillData.sort((a,b) => (a.order ?? 0) - (b.order ?? 0));
 
   return (
       <div className="flex flex-wrap gap-6 justify-center items-center w-full">
-  {skillData.map((item, i) => (
+  {cards.map((item, i) => (
     <div
       className="flex flex-col text-center w-54 h-80 cursor-pointer perspective"
       onClick={() => toggleFlip(i)}
@@ -91,9 +92,9 @@ export default function MainSkills2() {
             <p className="text-sm text-gray-500">{item.description}</p>
           </div>
         </div>
-        <div className="absolute backface-hidden h-full rotate-y-180 flex flex-col justify-center px-2">
+        <div className="absolute backface-hidden h-full w-full rotate-y-180 flex flex-col justify-center px-4">
           <ul className="list-disc list-outside pl-5 text-sm text-gray-600 text-left">
-            {item.featuredSkills.map((bullet, j) => (
+            {item.skills.map((bullet, j) => (
               <li className="mb-2" key={j}>{bullet}</li>
             ))}
           </ul>

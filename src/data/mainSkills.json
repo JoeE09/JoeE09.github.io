@@ -5,7 +5,7 @@
       "description": "Design under constraints, drawings, manufacturability",
       "icon": "/images/gears.svg",
       "order": 1,
-      "featuredSkills": ["solidworks", "autocad", "gdt", "dfm", "fabrication"]
+      "skills": ["solidworks", "autocad", "gdt", "dfm", "fabrication"]
     },
     {
       "id": "controls",
@@ -13,7 +13,7 @@
       "description": "Sensors, PLCs, DAQ, feedback loops, IoT",
       "icon": "/images/brain-circuit.svg",
       "order": 2,
-      "featuredSkills": ["plc", "daq", "mqtt", "raspberry-pi", "hmi-scada"]
+      "skills": ["plc", "daq", "mqtt", "raspberry-pi", "hmi-scada"]
     },
     {
       "id": "data",
@@ -21,7 +21,7 @@
       "description": "Pipelines, dashboards, scientific computing",
       "icon": "/images/chart-no-axes-combined.svg",
       "order": 3,
-      "featuredSkills": ["excel", "vba", "power-query", "power-bi", "python"]
+      "skills": ["excel", "vba", "power-query", "power-bi", "python"]
     },
     {
       "id": "software",
@@ -29,6 +29,6 @@
       "description": "Apps & add-ins, web, homelab, Linux",
       "icon": "/images/monitor.svg",
       "order": 4,
-      "featuredSkills": ["apps-script", "add-ins", "react", "git", "linux"]
+      "skills": ["apps-script", "add-ins", "react", "git", "linux"]
     }
   ]
