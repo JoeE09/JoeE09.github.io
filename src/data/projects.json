@@ -16,6 +16,14 @@
     "company": "Personal"
   },
   {
+    "title": "Overhead Crane Senior Design",
+    "description": "A design project focused on building an overhead crane system",
+    "imageUrl": "/images/projectCards/vba-intellisense.png",
+    "hoverGif": "/images/projectCards/vba-intellisense.mp4",
+    "status": "Complete",
+    "company": "College"
+  },
+  {
     "title": "Abeka QA Automations",
     "description": "A set of custom automations for the Abeka QA team to manage data more efficiently",
     "imageUrl": "/images/projectPages/qa-json-interface.png",
