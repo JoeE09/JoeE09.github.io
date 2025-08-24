@@ -2,33 +2,33 @@
     {
       "id": "engineering",
       "title": "Mechanical Design & Analysis",
-      "description": "Design under constraints, drawings, manufacturability",
+      "description": "Mechanical Design of components with awareness of manufacturing principles and processes",
       "icon": "/images/gears.svg",
       "order": 1,
-      "skills": ["solidworks", "autocad", "gdt", "dfm", "fabrication"]
+      "skills": ["3D CAD Modeling and Design", "Clear Drawings and Schematics", "Hands-on Prototyping and Fabrication", "Manufacturing Considerations"]
     },
     {
       "id": "controls",
       "title": "Controls & Automation",
-      "description": "Sensors, PLCs, DAQ, feedback loops, IoT",
+      "description": "Developing control systems and automation solutions",
       "icon": "/images/brain-circuit.svg",
       "order": 2,
-      "skills": ["plc", "daq", "mqtt", "raspberry-pi", "hmi-scada"]
+      "skills": ["PLC Programming", "HMI/SCADA", "DAQ Systems", "IoT Integration (MQTT, Microcontrollers)", "Control Theory"]
     },
     {
       "id": "data",
       "title": "Data & Visualization",
-      "description": "Pipelines, dashboards, scientific computing",
+      "description": "Transforming raw data into clear insights and visualizations",
       "icon": "/images/chart-no-axes-combined.svg",
       "order": 3,
-      "skills": ["excel", "vba", "power-query", "power-bi", "python"]
+      "skills": ["Data Pipeline Design", "Automated Reporting and Dashboards", "Scientific Computing and Statistics", "Interactive Visualizations"]
     },
     {
       "id": "software",
       "title": "Software & IT Systems",
-      "description": "Apps & add-ins, web, homelab, Linux",
+      "description": "Building software solutions and lightweight IT infrastructure",
       "icon": "/images/monitor.svg",
       "order": 4,
-      "skills": ["apps-script", "add-ins", "react", "git", "linux"]
+      "skills": ["Web Interfaces and Tools", "Custom Add-ins and Applications", "Linux System Administration", "Cross-Platform and API Integration"]
     }
   ]
