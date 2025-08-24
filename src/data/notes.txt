@@ -1,0 +1,19 @@
+Python
+VBA
+C++
+Java
+JavaScript
+Git
+Linux
+
+MQTT
+Microcontrollers
+PLC
+HMI/SCADA
+
+AutoCAD
+SolidWorks
+Fusion 360
+FEA
+
+Excel

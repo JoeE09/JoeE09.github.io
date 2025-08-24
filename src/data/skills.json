@@ -1,0 +1,564 @@
+{
+  "skills": [
+    {
+      "slug": "solidworks",
+      "label": "SolidWorks",
+      "synonyms": ["CAD", "3D modeling", "SW"],
+      "priority": 9,
+      "categories": {
+        "engineering": {
+          "bullets": [
+            "Parametric parts/assemblies and detailed drawings",
+            "Used on senior project fixtures/support structure"
+          ],
+          "projects": ["senior-project"],
+          "experience": ["pcc-degree"]
+        }
+      }
+    },
+    {
+      "slug": "autocad",
+      "label": "AutoCAD",
+      "synonyms": ["Drafting", "2D CAD"],
+      "priority": 8,
+      "categories": {
+        "engineering": {
+          "bullets": [
+            "Mechanical drawings and layout schematics",
+            "Clear dimensions/notes for fabrication"
+          ],
+          "projects": ["senior-project"],
+          "experience": ["pcc-degree"]
+        }
+      }
+    },
+    {
+      "slug": "fusion-360",
+      "label": "Fusion 360",
+      "priority": 6,
+      "categories": {
+        "engineering": {
+          "bullets": [
+            "Modeled/printed robot parts (FTC, hobby projects)"
+          ],
+          "projects": [],
+          "experience": ["pcc-degree"]
+        }
+      }
+    },
+    {
+      "slug": "creo",
+      "label": "Creo Parametric",
+      "priority": 5,
+      "categories": {
+        "engineering": {
+          "bullets": ["Exposure via robotics and coursework"]
+        }
+      }
+    },
+    {
+      "slug": "fea-basics",
+      "label": "FEA (basics)",
+      "synonyms": ["finite element analysis"],
+      "priority": 4,
+      "categories": {
+        "engineering": {
+          "bullets": ["Fundamentals from coursework; used for design sanity checks"]
+        }
+      }
+    },
+    {
+      "slug": "gdt",
+      "label": "GD&T",
+      "synonyms": ["geometric tolerancing"],
+      "priority": 6,
+      "categories": {
+        "engineering": {
+          "bullets": ["Applied on drawings; awareness of datum schemes and fits"]
+        }
+      }
+    },
+    {
+      "slug": "dfm-dfa",
+      "label": "DFM/DFA",
+      "synonyms": ["manufacturability", "assembly"],
+      "priority": 5,
+      "categories": {
+        "engineering": {
+          "bullets": ["Considered manufacturability and simplified build steps"]
+        }
+      }
+    },
+    {
+      "slug": "fabrication",
+      "label": "Fabrication & shop tools",
+      "synonyms": ["hand tools", "power tools"],
+      "priority": 6,
+      "categories": {
+        "engineering": {
+          "bullets": [
+            "Hands-on prototyping; basic shop processes",
+            "Assisted with build/test activities"
+          ],
+          "experience": ["eagle-systems", "pcc-degree"]
+        }
+      }
+    },
+
+    /* ---------- CONTROLS & AUTOMATION ---------- */
+
+    {
+      "slug": "daq",
+      "label": "DAQ systems",
+      "synonyms": ["data acquisition", "instrumentation"],
+      "priority": 9,
+      "categories": {
+        "controls": {
+          "bullets": [
+            "Supported propulsion test data capture and troubleshooting",
+            "Standardized data for downstream analysis"
+          ],
+          "projects": ["test-data-addin"],
+          "experience": ["eagle-systems"]
+        }
+      }
+    },
+    {
+      "slug": "sensors",
+      "label": "Sensors & transducers",
+      "priority": 8,
+      "categories": {
+        "controls": {
+          "bullets": [
+            "Integrated temp/humidity sensors for multi-room monitoring",
+            "Configured sampling, filtering, and logging"
+          ],
+          "projects": ["smart-home-controls"]
+        }
+      }
+    },
+    {
+      "slug": "plc",
+      "label": "PLCs (RSLogix; learning TIA Portal)",
+      "synonyms": ["Studio 5000", "ladder logic", "Rockwell", "Siemens"],
+      "priority": 6,
+      "categories": {
+        "controls": {
+          "bullets": [
+            "Built ladder-logic simulations in Studio 5000",
+            "Learning TIA Portal; state-machine sequencing concepts"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "hmi-scada",
+      "label": "HMI/SCADA (basics)",
+      "priority": 5,
+      "categories": {
+        "controls": {
+          "bullets": [
+            "Operator workflow concepts; alarms, trends, setpoints",
+            "Simple interfaces for automation tasks"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "electrical-troubleshooting",
+      "label": "Electrical troubleshooting",
+      "synonyms": ["multimeter", "oscilloscope"],
+      "priority": 6,
+      "categories": {
+        "controls": {
+          "bullets": [
+            "Basic diagnostics with DMM/scope on test setups"
+          ],
+          "experience": ["eagle-systems"]
+        }
+      }
+    },
+    {
+      "slug": "smart-relays",
+      "label": "Smart relays/plugs",
+      "priority": 7,
+      "categories": {
+        "controls": {
+          "bullets": [
+            "Actuation for dehumidifier/aux devices via control rules"
+          ],
+          "projects": ["smart-home-controls"]
+        }
+      }
+    },
+    {
+      "slug": "raspberry-pi",
+      "label": "Raspberry Pi",
+      "synonyms": ["RPi", "linux SBC"],
+      "priority": 9,
+      "categories": {
+        "controls": {
+          "bullets": [
+            "Always-on controller; MQTT broker + automation scripts"
+          ],
+          "projects": ["smart-home-controls"]
+        },
+        "software": {
+          "bullets": [
+            "Self-hosted services; logging and scheduled tasks"
+          ],
+          "projects": ["smart-home-controls"]
+        }
+      }
+    },
+    {
+      "slug": "esp32",
+      "label": "ESP32 / microcontrollers",
+      "priority": 6,
+      "categories": {
+        "controls": {
+          "bullets": ["Integrations for sensor nodes and IoT experiments"]
+        }
+      }
+    },
+    {
+      "slug": "mqtt",
+      "label": "MQTT",
+      "synonyms": ["mosquitto", "broker", "topics", "QoS"],
+      "priority": 9,
+      "categories": {
+        "controls": {
+          "bullets": [
+            "Ingested sensor broadcasts; topic filtering & thresholds",
+            "Triggered device actions from rule engine"
+          ],
+          "projects": ["smart-home-controls"]
+        },
+        "software": {
+          "bullets": [
+            "Broker on RPi; retention and structured logging for debug"
+          ],
+          "projects": ["smart-home-controls"]
+        }
+      }
+    },
+
+    /* ---------- DATA & VISUALIZATION ---------- */
+
+    {
+      "slug": "excel",
+      "label": "Excel",
+      "priority": 10,
+      "categories": {
+        "data": {
+          "bullets": [
+            "One-click reporting and standardized outputs",
+            "Templates for test/ops teams"
+          ],
+          "projects": ["test-data-addin", "abeka-qa", "forecasting-pipeline"]
+        }
+      }
+    },
+    {
+      "slug": "vba",
+      "label": "VBA",
+      "synonyms": ["Excel macros"],
+      "priority": 10,
+      "categories": {
+        "data": {
+          "bullets": [
+            "Automated report generation and data shaping",
+            "Add-in architecture for repeatable analysis"
+          ],
+          "projects": ["test-data-addin", "vba-intellisense"]
+        },
+        "software": {
+          "bullets": [
+            "Built custom add-ins and helper tooling for power users"
+          ],
+          "projects": ["vba-intellisense"]
+        }
+      }
+    },
+    {
+      "slug": "power-query",
+      "label": "Power Query",
+      "priority": 9,
+      "categories": {
+        "data": {
+          "bullets": [
+            "ETL for forecasting; cleaned/merged multi-source data"
+          ],
+          "projects": ["forecasting-pipeline", "abeka-qa"]
+        }
+      }
+    },
+    {
+      "slug": "power-pivot",
+      "label": "Power Pivot",
+      "priority": 7,
+      "categories": {
+        "data": {
+          "bullets": [
+            "Data models and KPIs for management reporting"
+          ],
+          "projects": ["forecasting-pipeline"]
+        }
+      }
+    },
+    {
+      "slug": "power-bi",
+      "label": "Power BI",
+      "priority": 6,
+      "categories": {
+        "data": {
+          "bullets": [
+            "Built dashboards to monitor call-center performance"
+          ],
+          "projects": ["forecasting-pipeline"]
+        }
+      }
+    },
+    {
+      "slug": "power-automate",
+      "label": "Power Automate",
+      "priority": 9,
+      "categories": {
+        "data": {
+          "bullets": [
+            "Scheduled flows for report delivery & notifications"
+          ],
+          "projects": ["forecasting-pipeline", "abeka-qa"]
+        },
+        "software": {
+          "bullets": [
+            "Automations for maintenance tracking & intake workflows"
+          ],
+          "projects": ["abeka-qa"],
+          "experience": ["eagle-systems"]
+        }
+      }
+    },
+    {
+      "slug": "apps-script",
+      "label": "Google Apps Script",
+      "synonyms": ["GAS"],
+      "priority": 6,
+      "categories": {
+        "data": {
+          "bullets": ["Automated reporting and data cleanup in Sheets"]
+        },
+        "software": {
+          "bullets": ["Lightweight webhooks and integrations for G Suite"]
+        }
+      }
+    },
+    {
+      "slug": "python",
+      "label": "Python",
+      "synonyms": ["pandas", "matplotlib"],
+      "priority": 8,
+      "categories": {
+        "data": {
+          "bullets": [
+            "Pandas analysis for Fitbit sleep trends",
+            "Data transforms for forecasting/reporting",
+            "API pulls with requests"
+          ],
+          "projects": ["sleep-trend-analyzer", "forecasting-pipeline"]
+        },
+        "software": {
+          "bullets": [
+            "Small desktop/web tools; automation scripts",
+            "RPi services for logging and scheduled jobs"
+          ],
+          "projects": ["smart-home-controls"]
+        },
+        "controls": {
+          "bullets": [
+            "MQTT client for sensor ingest and rule evaluation"
+          ],
+            "projects": ["smart-home-controls"]
+        }
+      }
+    },
+    {
+      "slug": "matlab",
+      "label": "MATLAB",
+      "priority": 5,
+      "categories": {
+        "data": {
+          "bullets": ["Scientific computing exposure from coursework"]
+        }
+      }
+    },
+    {
+      "slug": "sql",
+      "label": "SQL / SQLite",
+      "synonyms": ["databases"],
+      "priority": 5,
+      "categories": {
+        "data": {
+          "bullets": [
+            "Basic queries/joins for analysis and logging",
+            "Lightweight local DBs for prototypes"
+          ],
+          "projects": []
+        }
+      }
+    },
+    {
+      "slug": "rest-apis",
+      "label": "REST APIs",
+      "priority": 6,
+      "categories": {
+        "data": {
+          "bullets": ["Pulled external data into pipelines for reporting"]
+        },
+        "software": {
+          "bullets": ["Integrated services for custom tools and automations"]
+        }
+      }
+    },
+    {
+      "slug": "n8n",
+      "label": "n8n (automation)",
+      "priority": 4,
+      "categories": {
+        "software": {
+          "bullets": ["Low-code orchestration for small workflows"]
+        }
+      }
+    },
+
+    /* ---------- SOFTWARE & IT SYSTEMS ---------- */
+
+    {
+      "slug": "add-ins",
+      "label": "Custom add-ins",
+      "synonyms": ["Office add-ins", "VBA add-ins"],
+      "priority": 9,
+      "categories": {
+        "software": {
+          "bullets": [
+            "Packaged reusable functionality for analysts",
+            "Improved consistency and speed of reporting"
+          ],
+          "projects": ["test-data-addin", "vba-intellisense"]
+        }
+      }
+    },
+    {
+      "slug": "web-apps",
+      "label": "Web apps & interfaces",
+      "priority": 6,
+      "categories": {
+        "software": {
+          "bullets": [
+            "Built small internal tools and interfaces",
+            "Portfolio website and supporting components"
+          ],
+          "projects": ["portfolio-website"]
+        }
+      }
+    },
+    {
+      "slug": "javascript",
+      "label": "JavaScript / TypeScript",
+      "priority": 5,
+      "categories": {
+        "software": {
+          "bullets": ["Client logic and utilities for web tools"],
+          "projects": ["portfolio-website"]
+        }
+      }
+    },
+    {
+      "slug": "react",
+      "label": "React (basics)",
+      "priority": 4,
+      "categories": {
+        "software": {
+          "bullets": ["Component-driven UI for portfolio and small tools"],
+          "projects": ["portfolio-website"]
+        }
+      }
+    },
+    {
+      "slug": "html-css",
+      "label": "HTML/CSS",
+      "priority": 6,
+      "categories": {
+        "software": {
+          "bullets": ["Responsive layouts and clean UI for tools and site"],
+          "projects": ["portfolio-website"]
+        }
+      }
+    },
+    {
+      "slug": "git",
+      "label": "Git & version control",
+      "priority": 6,
+      "categories": {
+        "software": {
+          "bullets": ["Branching, commits, and code reviews for projects"]
+        }
+      }
+    },
+    {
+      "slug": "linux",
+      "label": "Linux system administration",
+      "priority": 7,
+      "categories": {
+        "software": {
+          "bullets": [
+            "Homelab/RPi services; shell scripting and cron",
+            "Lightweight security policies and user permissions"
+          ],
+          "projects": ["smart-home-controls"]
+        }
+      }
+    },
+    {
+      "slug": "shell",
+      "label": "Shell scripting",
+      "priority": 6,
+      "categories": {
+        "software": {
+          "bullets": ["Automated tasks and local dev tooling on Linux/RPi"]
+        }
+      }
+    },
+    {
+      "slug": "java",
+      "label": "Java",
+      "priority": 3,
+      "categories": {
+        "software": {
+          "bullets": ["Used for FTC robotics programming"],
+          "experience": []
+        }
+      }
+    },
+    {
+      "slug": "cpp",
+      "label": "C++",
+      "priority": 3,
+      "categories": {
+        "software": {
+          "bullets": ["Coursework and small utilities"]
+        }
+      }
+    },
+    {
+      "slug": "csharp",
+      "label": "C#",
+      "priority": 3,
+      "categories": {
+        "software": {
+          "bullets": ["Exposure via desktop tools and experiments"]
+        }
+      }
+    }
+  ]
+}
