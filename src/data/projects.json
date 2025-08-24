@@ -1,5 +1,6 @@
 [
   {
+    "slug": "excel-data-tools",
     "title": "Test Data Analysis Add-in",
     "description": "Custom Excel add-in for batch data importing and plotting to streamline engine test data validation",
     "imageUrl": "/images/projectCards/excel-data-tools.png",
@@ -8,6 +9,7 @@
     "company": "Eagle Systems"
   },
   {
+    "slug": "vba-intellisense",
     "title": "VBA IntelliSense",
     "description": "Custom IntelliSense tool for the VBA editor using C# and WinForms",
     "imageUrl": "/images/projectCards/vba-intellisense.png",
@@ -16,14 +18,15 @@
     "company": "Personal"
   },
   {
+    "slug": "senior-design",
     "title": "Overhead Crane Senior Design",
     "description": "A design project focused on building an overhead crane system",
-    "imageUrl": "/images/projectCards/vba-intellisense.png",
-    "hoverGif": "/images/projectCards/vba-intellisense.mp4",
+    "imageUrl": "/images/projectCards/overhead-crane-senior-design.png",
     "status": "Complete",
     "company": "College"
   },
   {
+    "slug": "abeka-qa-automations",
     "title": "Abeka QA Automations",
     "description": "A set of custom automations for the Abeka QA team to manage data more efficiently",
     "imageUrl": "/images/projectPages/qa-json-interface.png",
@@ -31,6 +34,7 @@
     "company": "Abeka"
   },
   {
+    "slug": "forecasting-automation-pipeline",
     "title": "Forecasting Automation Pipeline",
     "description": "A data pipeline in Excel to easily manage forecasting and call center demand data",
     "imageUrl": "/images/projectPages/abeka-forecasting-pipeline.png",
@@ -38,6 +42,7 @@
     "company": "Abeka"
   },
   {
+    "slug": "sleep-trend-analyzer",
     "title": "Sleep Trend Analyzer",
     "description": "Collects, analyzes, and visualizes sleep data to identify links between habits and sleep",
     "imageUrl": "/images/projectCards/sleep-icon.svg",
@@ -46,11 +51,12 @@
     "company": "Personal"
   },
   {
-  "title": "Portfolio Website",
-  "description": "Custom-built site to showcase projects and technical skills using React, Tailwind, and Vite",
-  "imageUrl": "/images/projectPages/portfolio-website-banner.png",
-  "hoverGif": "/images/projectPages/portfolio-markdown-translation.png",
-  "status": "Complete",
+    "slug": "portfolio-website",
+    "title": "Portfolio Website",
+    "description": "Custom-built site to showcase projects and technical skills using React, Tailwind, and Vite",
+    "imageUrl": "/images/projectPages/portfolio-website-banner.png",
+    "hoverGif": "/images/projectPages/portfolio-markdown-translation.png",
+    "status": "Complete",
   "company": "Personal"
 }
 ]

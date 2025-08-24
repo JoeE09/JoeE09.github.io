@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
+  slug: string;
   title: string;
   description: string;
   imageUrl: string;
@@ -20,6 +21,7 @@ const statusColorMap: Record<string, string> = {
 };
 
 export default function ProjectCard({
+  slug,
   title,
   description,
   imageUrl,
@@ -29,7 +31,7 @@ export default function ProjectCard({
   link,
 }: ProjectCardProps) {
   const normalizedLink =
-    link || `/projects/${title.toLowerCase().replace(/\s+/g, "-")}`;
+    link || `/projects/${slug}`;
 
   // video element reference so we can control playback from the parent container
   const videoRef = useRef<HTMLVideoElement>(null);
