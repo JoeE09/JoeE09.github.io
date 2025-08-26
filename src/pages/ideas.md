@@ -10,7 +10,7 @@ I'm Joseph - a technology enthusiast who builds systems that bridge engineering 
 # Potential opening paragraphs
 I'm a mechanical engineer that specializes in designing tools to eliminate repetitive tasks and extract insights from data, whether it's extending engineering capabilities or streamlining operations for any business. I've developed custom software add-ins, automation systems, intuitive interfaces, and personal tools to enhance productivity and make both work and life simpler.
 
-I'm Joseph, a mechanical engineering graduate with a broad skillset encompassing mechanical design, controls, software development, automation, and data analytics. I develop tools and systems that enable teams to accomplish more with fewer errors, or create data pipelines that allow enable better decision-making. My work has been in engineering, business, and personal environments.
+I'm Joseph, a mechanical engineering graduate with a broad skillset encompassing mechanical design, controls, software development, automation, and data analytics. I develop tools and systems that enable teams to accomplish more with fewer errors, create data pipelines that enable better decision-making, and more. My work has been in engineering, business, and personal environments.
 
 I'm Joseph, a mechanically-trained engineer with a passion for leveraging the most effective tools to maximize results in any environment from engineering to business. My skillset spans from mechanical design to automation and controls to programming, with the aim of finding a role at the intersection of engineering and software - whether in controls, operations, analytics, or manufacturing.
 

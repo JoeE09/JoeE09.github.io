@@ -105,7 +105,8 @@
       }
     },
 
-    /* ---------- CONTROLS & AUTOMATION ---------- */
+    
+    
 
     {
       "slug": "daq",
@@ -243,7 +244,8 @@
       }
     },
 
-    /* ---------- DATA & VISUALIZATION ---------- */
+    
+    
 
     {
       "slug": "excel",
@@ -431,7 +433,8 @@
       }
     },
 
-    /* ---------- SOFTWARE & IT SYSTEMS ---------- */
+    
+    
 
     {
       "slug": "add-ins",

@@ -3,7 +3,9 @@ import { useState, useEffect, useRef } from "react";
 import AnimatedText from "@/components/AnimatedText";
 import Timeline6 from "@/components/Timeline6";
 import MainSkills2 from "@/components/MainSkills2";
-import SkillsList from "@/components/SkillsList";
+import mainSkillsJson from "@/data/mainSkills.json";
+import skillsJson from "@/data/skills.json"
+import { SkillsBubble } from "@/components/SkillBubble";
 
 export default function HomePage() {
   const [cursorPos, setCursorPos] = useState({ x: -100, y: -100 });
@@ -114,39 +116,18 @@ export default function HomePage() {
           
         </p> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div className="mb-6">
-            <h2 className="text-2xl font-semibold text-customGreen mb-4 text-center ">
-              Engineering & Tools
-            </h2>
-            <SkillsList 
-              skills={["AutoCAD", "SolidWorks", "Fusion 360", "Creo Parametric", "FEA basics", "GD&T", "Drafting & blueprints", "DFM/DFA", "Fabrication", "Hand & power tools"]}
-            />
-          </div>
-          
-          <div className="mb-6">
-            <h2 className="text-2xl font-semibold text-customGreen mb-4 text-center ">
-              Controls & Instrumentation
-            </h2>
-            <SkillsList 
-              skills={["DAQ systems", "Sensors & transducers", "PLCs", "HMI/SCADA basics", "Smart relays", "Raspberry Pi", "ESP32", "MQTT"]}
-            />
-          </div>
-          <div className="mb-6">
-            <h2 className="text-2xl font-semibold text-customGreen mb-4 text-center ">
-              Data & Analytics
-            </h2>
-            <SkillsList 
-              skills={["Excel", "VBA", "Power Query", "Power Pivot", "Power BI", "Power Automate", "Apps Script", "Python", "Pandas", "MATLAB", "SQL", "REST APIs", "Automation scripting", "Add-ins"]}
-            />
-          </div>
-          <div className="">
-            <h2 className="text-2xl font-semibold text-customGreen mb-4 text-center ">
-              Programming
-            </h2>
-            <SkillsList 
-              skills={["Java", "C++", "C#", "JavaScript", "TypeScript", "HTML/CSS", "React", "Git", "Linux", "Shell scripts", "Web apps"]}
-            />
-          </div>
+          {mainSkillsJson.map((mainSkill) => (
+            <div key={mainSkill.id} className="mb-6">
+              <h2 className="text-2xl font-semibold text-customGreen mb-4 text-center ">
+                {mainSkill.title}
+              </h2>
+              {skillsJson.skills
+                .filter((skill) => Object.keys(skill.categories).includes(mainSkill.id))
+                .map((skill) => (
+                  <SkillsBubble key={skill.slug} skill={skill} pillarId={mainSkill.id} />
+                ))}
+            </div>
+          ))}
         </div>
       </section>}
       
