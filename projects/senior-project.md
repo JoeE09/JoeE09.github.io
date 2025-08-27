@@ -5,23 +5,26 @@ banner: /images/crane-details.png
 
 # Hero
 
-### The Setup
-- The hypothetical client was expanding their manufacturing facility with a new industrial warehouse
-- Our project involved 3 teams: materials handling, mechanical, and structural
+### My Role
+- Participated with a team of 15 students to design an industrial warehouse (structural, mechanical, materials handling) for a hypothetical client.
+- Tasked to design an overhead crane system and select paint booths for the production line.
+- Had to ensure that the crane system and paint booths were integrated with the overall building design and met all relevant safety standards.
 
-### My Contribution
-- I was responsible for the structural design of the crane system, including load calculations and material selection.
-- Designed the layout and support structure for the crane in accordance with structural standards (e.g. AISC Steel Manual, Steel Specification, ASCE/SEI Codes).
-- Also was responsible for researching and selecting paint booths for a hypothetical production line.
-- Collaborated with other teams to ensure building structure could support design loads and that paint booths were compatible with material flow.
+### My Work
+- Met with client and other team members to establish project requirements and constraints.
+- Researched and communicated with vendors to select equipment that met client specifications.
+- Conducted load analysis studies and calculated load combinations for the crane supports using relevant standards.
+- Selected and detailed appropriate steel components/assemblies to meet all loading and safety requirements in accordance with relevant codes and standards.
+- Created detailed drawings specifying equipment layouts and assembly details.
 
 # Div className="max-w-3xl mx-auto mt-6"
 ### Overview And Technical Constraints
-This project was an academic simulation of a real-world engineering firm-style project. My role was split into two main parts, crane structure design and paint booth selection. Given the short timespan of the project, I spend the most time on the crane structure design, and less time on the paint booth setup (although I ensured that the paint booths met all relevant standards / constraints). Some of the main constraints for the crane design included:
+This project was an academic simulation of a real-world engineering firm-style project. My role was split into two main parts, crane structure design and paint booth selection. Some of the main constraints for the crane design included:
 
-- **Load Capacity and Rating:** The crane was required to lift a certain load (10 tons), with a particular frequency of movement.
-- **Structural Standards:** There are many structural standards for the crane support structure, governing aspects such as deflection limits, safety factors, and load combinations.
-- **Economics:** Support structure was to exceed the required load and deflection limits while still minimizing material usage and cost.
+- **Client Requirements:** Meetings with the client were required to establish design constraints for the crane system (e.g. maximum capacity, speed, service class) and paint booths (e.g. size, airflow, etc.).
+- **Team Member Input:** Collaboration and communication with team members was necessary to ensure building structure could support the crane system and that adequate clearances / safety standards were maintained.
+- **Structural / Safety Compliance:** The support structure design and safety standards were governed by various codes and standards (e.g. AISC, ASCE/SEI, CMAA, IBC, OSHA).
+- **Economics:** Support structure was to meet all safety and serviceability requirements while minimizing material and assembly costs.
 
 # Div/
 
@@ -31,35 +34,32 @@ Section View of the Crane
 # TwoColumns className="mt-10"
 
 # ![Crane Bumper Force Estimation](/images/crane-bumper-force.png)
-Designing a proper crane support structure involved analysis of worst-case loading scenarios
+Worst-case loading scenarios were analyzed to ensure the crane support structure could withstand extreme conditions.
 
-### Features
-- **Seamless Integration with Current Workflow:** The crane system was designed to tie directly into the building’s layout and material handling line, ensuring uninterrupted flow between fabrication and finishing processes.  
-- **Validated Structural Safety:** Runway beams, columns, and bracing were sized to exceed load and deflection requirements while maintaining safety factors specified in AISC and ASCE/SEI standards.  
-- **Economical, Practical Design:** Built-up members, fillet welds, and standardized steel grades were chosen to balance safety, reliability, and cost. Wherever possible, details were simplified for fabrication efficiency.  
-- **Flexible Paint Booth Setup:** Booths were specified with cross-draft airflow, OSHA-compliant ventilation, and monorail access slots so that different payload types could be accommodated without redesign.  
+### Design Scope
+- **Load Combinations and Analysis:** The crane system was designed to accommodate various load combinations, including static, dynamic, and impact loads. Detailed analysis was performed to ensure all potential loading scenarios were considered.
+- **Structural Component Selection:** Runway beams, columns, and bracing were sized to exceed load and deflection requirements while maintaining safety factors specified in AISC and ASCE/SEI standards. Built-up members were selected to optimize material usage while ensuring structural integrity.
+- **Connection Detailing:** Welds, bolts, and other connections were designed to ensure proper load transfer and structural integrity. Detailing was performed to account for fabrication and assembly processes.
+- **Flexible Paint Booth Setup:** Booths were specified with cross-draft airflow, OSHA-compliant ventilation, and monorail access slots so that different payload types could be accommodated without redesign.
+- **Thorough Research and Compliance:** This project was entirely self-driven, requiring extensive research into relevant codes, standards, and best practices and collaboration with other engineers to ensure all aspects of the design met or exceeded industry requirements.
 
 ### Technical Challenges
-- - **Proper Data Combination:** One of the most difficult aspects was reconciling manufacturer data with governing codes (CMAA, AISC, ASCE/SEI, IBC). In many cases, manufacturer loads were optimistic, so I recalculated forces (wheel loads, lateral/longitudinal loads, bumper impact) and used the more conservative values in design.  
-- **Worst-Case Loading:** Support members had to be checked for simultaneous crane usage, dynamic impact, and bracing under bumper loads. For example, end-stop impacts were modeled using work-energy methods and conservative assumptions about bumper deformation.  
-- **Fatigue and Serviceability:** Crane runway connections are subject to repetitive stress; detailing had to allow end rotation and minimize fatigue. Tolerances were also tight — deflection limits were L/600 vertically and L/400 laterally.  
-- **Cross-Team Coordination:** The crane support had to integrate with HVAC clearances, floor plans, and structural foundations. Similarly, the paint booths had to be placed for efficient material movement while respecting airflow, drainage, and structural loading.   
+- **Analysis of built-up members:** Calculating section properties of built-up members took extensive analysis, as well as stress and deflection analysis under combined loads such as shear, torsion, and biaxial bending.
+- **Worst-Case Loading:** Support members had to be checked for simultaneous crane usage, dynamic impact, and bracing under bumper loads. For example, end-stop impacts were modeled using work-energy methods and conservative assumptions about bumper deformation.
+- **Fatigue and Serviceability:** Crane runway connections are subject to repetitive stress; detailing had to allow end rotation and minimize fatigue. Tolerances were also tight — deflection limits were L/600 vertically and L/400 laterally.
+- **Cross-Team Coordination:** The crane support had to integrate with HVAC clearances, floor plans, and structural foundations. Similarly, the paint booths had to be placed for efficient material movement while respecting airflow, drainage, and structural loading.
 
 # ![Connection Detail Views](/images/crane-details2.png)
-The project required detailed drawings to specify how the support structure would be assembled, including the connection details.
+Detail views showing connections for the crane support structure
 
 # TwoColumns/
-
-# TwoColumns className="mt-2"
-# Technologies
-- AutoCAD
-- AISC Steel Manual / Codes
-- Excel
 
 
 # Skills
 - Cross-functional collaboration
-- Steel Design (ASD, LRFD)
-- Structural Analysis
-- Floor plan layouts
-# TwoColumns/
+- Steel Design & Structural Analysis (ASD, LRFD)
+- Connection detailing (welds, bolts, base plates, anchors)
+- Load Calculations and Material Selection
+- Safety & compliance research (OSHA, IBC, AISC)
+- Detail and layout drawings in AutoCAD
+- Engineering Documentation & Reports
