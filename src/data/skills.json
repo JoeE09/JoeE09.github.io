@@ -579,7 +579,10 @@
       "priority": 7,
       "categories": {
         "software": {
-          "bullets": ["Coursework and small utilities"]
+          "bullets": [
+            "Used extensively in college coursework",
+            "Programmed microcontroller workflows (ESP32)"
+          ]
         }
       }
     },
