@@ -9,6 +9,11 @@
     "outputFile": "src/pages/projects/ExcelDataTools.tsx",
     "lastGenerated": "2025-06-27T15:22:37.540Z"
   },
+  "test-data-analysis-add-in": {
+    "locked": true,
+    "outputFile": "src/pages/projects/TestDataAnalysisAddIn.tsx",
+    "lastGenerated": "2025-06-27T15:22:37.540Z"
+  },
   "abeka-qa-automations": {
     "locked": true,
     "outputFile": "src/pages/projects/AbekaQaAutomations.tsx",
@@ -29,9 +34,14 @@
     "outputFile": "src/pages/projects/SleepTracker.tsx",
     "lastGenerated": "2025-06-25T02:35:57.091Z"
   },
-  "senior-project": {
+  "sleep-trend-analyzer": {
     "locked": true,
+    "outputFile": "src/pages/projects/SleepTrendAnalyzer.tsx",
+    "lastGenerated": "2025-06-25T02:35:57.091Z"
+  },
+  "senior-project": {
+    "locked": false,
     "outputFile": "src/pages/projects/SeniorProject.tsx",
-    "lastGenerated": "2025-06-27T02:39:03.779Z"
+    "lastGenerated": "2025-08-27T05:09:58.991Z"
   }
 }

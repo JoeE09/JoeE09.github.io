@@ -126,6 +126,8 @@ export function generateTsxFromMdast(tree: Root, slug: string, componentName: st
   let indentLevel = 0;
   let lastHeader = '';
   let mainDropped = false;
+  // let linksDropped = false;
+  // let demoDropped = false;
   const lastHeaderArgs: string[] = [];
   const linkArgs: {label: string; href: string; icon?: string}[] = [];
   const heroBlocks: { title: string; bullets: string[] }[] = [];
