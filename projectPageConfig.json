@@ -20,7 +20,7 @@
     "lastGenerated": "2025-06-24T15:27:00.633Z"
   },
   "forecasting-automation-pipeline": {
-    "locked": false,
+    "locked": true,
     "outputFile": "src/pages/projects/ForecastingAutomationPipeline.tsx",
     "lastGenerated": "2025-06-27T16:43:53.507Z"
   },

@@ -1,6 +1,6 @@
 [
   {
-    "slug": "excel-data-tools",
+    "slug": "test-data-analysis-add-in",
     "title": "Test Data Analysis Add-in",
     "description": "Custom Excel add-in for batch data importing and plotting to streamline engine test data validation",
     "imageUrl": "/images/projectCards/excel-data-tools.png",
@@ -18,8 +18,8 @@
     "company": "Personal"
   },
   {
-    "slug": "senior-design",
-    "title": "Overhead Crane Senior Design",
+    "slug": "senior-project",
+    "title": "Overhead Crane Senior Project",
     "description": "A design project focused on building an overhead crane system",
     "imageUrl": "/images/projectCards/overhead-crane-senior-design.png",
     "status": "Complete",

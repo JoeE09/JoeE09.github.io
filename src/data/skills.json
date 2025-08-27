@@ -4,12 +4,13 @@
       "slug": "solidworks",
       "label": "SolidWorks",
       "synonyms": ["CAD", "3D modeling", "SW"],
-      "priority": 9,
+      "priority": 2,
       "categories": {
         "engineering": {
           "bullets": [
             "Parametric parts/assemblies and detailed drawings",
-            "Used on senior project fixtures/support structure"
+            "Simulations for stress and motion analysis",
+            "Designed 3D-printable parts for design competitions"
           ],
           "projects": ["senior-project"],
           "experience": ["pcc-degree"]
@@ -20,7 +21,7 @@
       "slug": "autocad",
       "label": "AutoCAD",
       "synonyms": ["Drafting", "2D CAD"],
-      "priority": 8,
+      "priority": 1,
       "categories": {
         "engineering": {
           "bullets": [
@@ -35,11 +36,12 @@
     {
       "slug": "fusion-360",
       "label": "Fusion 360",
-      "priority": 6,
+      "priority": 4,
       "categories": {
         "engineering": {
           "bullets": [
-            "Modeled/printed robot parts (FTC, hobby projects)"
+            "Created 3D-printable parts in high school and college robotics contests",
+            "3D-modeled entire robot assemblies for design and analysis (high school FTC robotics)"
           ],
           "projects": [],
           "experience": ["pcc-degree"]
@@ -52,7 +54,7 @@
       "priority": 5,
       "categories": {
         "engineering": {
-          "bullets": ["Exposure via robotics and coursework"]
+          "bullets": ["Designed 3D-printed parts for robotics in FTC robotics in high school"]
         }
       }
     },
@@ -63,7 +65,7 @@
       "priority": 4,
       "categories": {
         "engineering": {
-          "bullets": ["Fundamentals from coursework; used for design sanity checks"]
+          "bullets": ["Fundamentals from coursework"]
         }
       }
     },
@@ -74,7 +76,7 @@
       "priority": 6,
       "categories": {
         "engineering": {
-          "bullets": ["Applied on drawings; awareness of datum schemes and fits"]
+          "bullets": ["Applied on drawings in coursework"]
         }
       }
     },
@@ -85,7 +87,7 @@
       "priority": 5,
       "categories": {
         "engineering": {
-          "bullets": ["Considered manufacturability and simplified build steps"]
+          "bullets": ["Studied concepts in college coursework and CMfgT certification"]
         }
       }
     },
@@ -93,33 +95,66 @@
       "slug": "fabrication",
       "label": "Fabrication & shop tools",
       "synonyms": ["hand tools", "power tools"],
-      "priority": 6,
+      "priority": 2,
       "categories": {
         "engineering": {
           "bullets": [
             "Hands-on prototyping; basic shop processes",
-            "Assisted with build/test activities"
+            "Made components for school competitions in high school and college",
+            "3D printing, woodworking, and metal machining",
+            "Drill press, Band saw, Milling machine",
+            "CNC exposure from coursework"
           ],
           "experience": ["eagle-systems", "pcc-degree"]
         }
       }
     },
+    {
+      "slug": "structural-analysis",
+      "label": "Structural Analysis",
+      "synonyms": ["stress analysis", "strain analysis"],
+      "priority": 3,
+      "categories": {
+        "engineering": {
+          "bullets": [
+            "Rigorous coursework in stress/strain analysis in design of mechanical and structural components",
+            "Extensive structural analysis and steel design with relevant codes and standards",
+            "Applied steel design techniques to an overhead crane system in senior project"
+          ],
+          "projects": ["senior-project"],
+          "experience": ["eagle-systems", "pcc-degree"]
+        }
+      }
+    },
+    {
+      "slug": "thermal-systems",
+      "label": "Thermal Systems / HVAC",
+      "priority": 4,
+      "categories": {
+        "engineering": {
+          "bullets": [
+            "Fundamentals of thermodynamics, heat transfer, fluid mechanics",
+            "Extensive coursework in HVAC system design in college",
+            "Familiarity with ASHRAE standards and heating load calculations in commercial and residential settings"
+          ]
+        }
+      }
+    },
 
-    
-    
+
+
 
     {
       "slug": "daq",
       "label": "DAQ systems",
       "synonyms": ["data acquisition", "instrumentation"],
-      "priority": 9,
+      "priority": 3,
       "categories": {
         "controls": {
           "bullets": [
             "Supported propulsion test data capture and troubleshooting",
             "Standardized data for downstream analysis"
           ],
-          "projects": ["test-data-addin"],
           "experience": ["eagle-systems"]
         }
       }
@@ -127,13 +162,16 @@
     {
       "slug": "sensors",
       "label": "Sensors & transducers",
-      "priority": 8,
+      "priority": 3,
       "categories": {
         "controls": {
           "bullets": [
+            "Helped calibrate transducers for propulsion testing (Eagle Systems)",
             "Integrated temp/humidity sensors for multi-room monitoring",
+            "Built residential air quality monitor using off-the-shelf sensors and ESP32",
             "Configured sampling, filtering, and logging"
           ],
+          "experience": ["eagle-systems"],
           "projects": ["smart-home-controls"]
         }
       }
@@ -142,12 +180,12 @@
       "slug": "plc",
       "label": "PLCs (RSLogix; learning TIA Portal)",
       "synonyms": ["Studio 5000", "ladder logic", "Rockwell", "Siemens"],
-      "priority": 6,
+      "priority": 2,
       "categories": {
         "controls": {
           "bullets": [
-            "Built ladder-logic simulations in Studio 5000",
-            "Learning TIA Portal; state-machine sequencing concepts"
+            "Built ladder-logic simulations in RSLogix Emulate",
+            "Currently doing online PLC courses"
           ]
         }
       }
@@ -160,7 +198,8 @@
         "controls": {
           "bullets": [
             "Operator workflow concepts; alarms, trends, setpoints",
-            "Simple interfaces for automation tasks"
+            "Simple interfaces for automation tasks",
+            "Currently learning more HMI/SCADA concepts online"
           ]
         }
       }
@@ -173,7 +212,8 @@
       "categories": {
         "controls": {
           "bullets": [
-            "Basic diagnostics with DMM/scope on test setups"
+            "Basic diagnostics with DMM/scope on test setups",
+            "Basic reading of electrical schematics for troubleshooting connections"
           ],
           "experience": ["eagle-systems"]
         }
@@ -186,7 +226,8 @@
       "categories": {
         "controls": {
           "bullets": [
-            "Actuation for dehumidifier/aux devices via control rules"
+            "Actuation for dehumidifier/thermostat and other smart home devices",
+            "Connection to cloud infrastructure for monitoring"
           ],
           "projects": ["smart-home-controls"]
         }
@@ -196,11 +237,11 @@
       "slug": "raspberry-pi",
       "label": "Raspberry Pi",
       "synonyms": ["RPi", "linux SBC"],
-      "priority": 9,
+      "priority": 4,
       "categories": {
         "controls": {
           "bullets": [
-            "Always-on controller; MQTT broker + automation scripts"
+            "Always-on controller; MQTT broker, smart home controller"
           ],
           "projects": ["smart-home-controls"]
         },
@@ -215,18 +256,19 @@
     {
       "slug": "esp32",
       "label": "ESP32 / microcontrollers",
-      "priority": 6,
+      "priority": 3,
       "categories": {
         "controls": {
           "bullets": ["Integrations for sensor nodes and IoT experiments"]
-        }
+        },
+        "projects": ["smart-home-controls", "sleep-trend-analyzer"]
       }
     },
     {
       "slug": "mqtt",
       "label": "MQTT",
       "synonyms": ["mosquitto", "broker", "topics", "QoS"],
-      "priority": 9,
+      "priority": 3,
       "categories": {
         "controls": {
           "bullets": [
@@ -250,14 +292,17 @@
     {
       "slug": "excel",
       "label": "Excel",
-      "priority": 10,
+      "priority": 1,
       "categories": {
         "data": {
           "bullets": [
-            "One-click reporting and standardized outputs",
-            "Templates for test/ops teams"
+            "Managing small to medium data sets",
+            "Advanced formula knowledge + Power Query / Power Pivot (DAX)",
+            "Extended capability via VBA addins/scripts and/or Power Platform automations",
+            "Dashboard creation with pivot tables and pivot charts"
           ],
-          "projects": ["test-data-addin", "abeka-qa", "forecasting-pipeline"]
+          "experience": ["abeka", "eagle-systems", "pcc-degree"],
+          "projects": ["test-data-analysis-add-in", "abeka-qa-automations", "forecasting-automation-pipeline"]
         }
       }
     },
@@ -265,33 +310,38 @@
       "slug": "vba",
       "label": "VBA",
       "synonyms": ["Excel macros"],
-      "priority": 10,
+      "priority": 1,
       "categories": {
         "data": {
           "bullets": [
             "Automated report generation and data shaping",
-            "Add-in architecture for repeatable analysis"
+            "Add-in architecture for repeatable analysis",
+            "Advanced formulas for engineering calculations"
           ],
-          "projects": ["test-data-addin", "vba-intellisense"]
+          "experience": ["abeka", "eagle-systems"],
+          "projects": ["test-data-analysis-add-in"]
         },
         "software": {
           "bullets": [
             "Built custom add-ins and helper tooling for power users"
           ],
-          "projects": ["vba-intellisense"]
+          "experience": ["abeka", "eagle-systems"],
+          "projects": ["test-data-analysis-add-in", "vba-intellisense"]
         }
       }
     },
     {
       "slug": "power-query",
       "label": "Power Query",
-      "priority": 9,
+      "priority": 5,
       "categories": {
         "data": {
           "bullets": [
-            "ETL for forecasting; cleaned/merged multi-source data"
+            "ETL for forecasting; cleaned/merged multi-source data",
+            "Managing live data connections and transformations"
           ],
-          "projects": ["forecasting-pipeline", "abeka-qa"]
+          "experience": ["abeka"],
+          "projects": ["forecasting-automation-pipeline", "abeka-qa-automations"]
         }
       }
     },
@@ -302,9 +352,11 @@
       "categories": {
         "data": {
           "bullets": [
-            "Data models and KPIs for management reporting"
+            "Data models and KPIs for management reporting",
+            "Advanced DAX Knowledge"
           ],
-          "projects": ["forecasting-pipeline"]
+          "experience": ["abeka"],
+          "projects": ["forecasting-automation-pipeline"]
         }
       }
     },
@@ -315,29 +367,30 @@
       "categories": {
         "data": {
           "bullets": [
-            "Built dashboards to monitor call-center performance"
+            "Prototyped dashboards for monitoring call center KPIs"
           ],
-          "projects": ["forecasting-pipeline"]
+          "experience": ["abeka"],
+          "projects": ["forecasting-automation-pipeline"]
         }
       }
     },
     {
       "slug": "power-automate",
       "label": "Power Automate",
-      "priority": 9,
+      "priority": 3,
       "categories": {
         "data": {
           "bullets": [
             "Scheduled flows for report delivery & notifications"
           ],
-          "projects": ["forecasting-pipeline", "abeka-qa"]
+          "projects": ["forecasting-automation-pipeline", "abeka-qa-automations"]
         },
         "software": {
           "bullets": [
             "Automations for maintenance tracking & intake workflows"
           ],
-          "projects": ["abeka-qa"],
-          "experience": ["eagle-systems"]
+          "projects": ["abeka-qa-automations", "forecasting-automation-pipeline"],
+          "experience": ["eagle-systems", "abeka"]
         }
       }
     },
@@ -351,7 +404,13 @@
           "bullets": ["Automated reporting and data cleanup in Sheets"]
         },
         "software": {
-          "bullets": ["Lightweight webhooks and integrations for G Suite"]
+          "bullets": [
+            "Webhooks and integrations (e.g. automated emails)",
+            "Lightweight API endpoints for data logging or other uses",
+            "Small-scale automation solutions for businesses"
+          ],
+          "experience": ["abeka"],
+          "projects": ["abeka-qa-automations", "sleep-trend-analyzer"]
         }
       }
     },
@@ -359,7 +418,7 @@
       "slug": "python",
       "label": "Python",
       "synonyms": ["pandas", "matplotlib"],
-      "priority": 8,
+      "priority": 1,
       "categories": {
         "data": {
           "bullets": [
@@ -367,7 +426,7 @@
             "Data transforms for forecasting/reporting",
             "API pulls with requests"
           ],
-          "projects": ["sleep-trend-analyzer", "forecasting-pipeline"]
+          "projects": ["sleep-trend-analyzer", "forecasting-automation-pipeline"]
         },
         "software": {
           "bullets": [
@@ -387,7 +446,7 @@
     {
       "slug": "matlab",
       "label": "MATLAB",
-      "priority": 5,
+      "priority": 6,
       "categories": {
         "data": {
           "bullets": ["Scientific computing exposure from coursework"]
@@ -398,7 +457,7 @@
       "slug": "sql",
       "label": "SQL / SQLite",
       "synonyms": ["databases"],
-      "priority": 5,
+      "priority": 3,
       "categories": {
         "data": {
           "bullets": [
@@ -422,16 +481,7 @@
         }
       }
     },
-    {
-      "slug": "n8n",
-      "label": "n8n (automation)",
-      "priority": 4,
-      "categories": {
-        "software": {
-          "bullets": ["Low-code orchestration for small workflows"]
-        }
-      }
-    },
+    
 
     
     
@@ -440,21 +490,22 @@
       "slug": "add-ins",
       "label": "Custom add-ins",
       "synonyms": ["Office add-ins", "VBA add-ins"],
-      "priority": 9,
+      "priority": 2,
       "categories": {
         "software": {
           "bullets": [
             "Packaged reusable functionality for analysts",
-            "Improved consistency and speed of reporting"
+            "Improved consistency and speed of reporting",
+            "Designed with user-friendly interfaces that integrate with existing workflows"
           ],
-          "projects": ["test-data-addin", "vba-intellisense"]
+          "projects": ["test-data-analysis-add-in", "vba-intellisense"]
         }
       }
     },
     {
       "slug": "web-apps",
       "label": "Web apps & interfaces",
-      "priority": 6,
+      "priority": 4,
       "categories": {
         "software": {
           "bullets": [
@@ -477,17 +528,6 @@
       }
     },
     {
-      "slug": "react",
-      "label": "React (basics)",
-      "priority": 4,
-      "categories": {
-        "software": {
-          "bullets": ["Component-driven UI for portfolio and small tools"],
-          "projects": ["portfolio-website"]
-        }
-      }
-    },
-    {
       "slug": "html-css",
       "label": "HTML/CSS",
       "priority": 6,
@@ -501,7 +541,7 @@
     {
       "slug": "git",
       "label": "Git & version control",
-      "priority": 6,
+      "priority": 4,
       "categories": {
         "software": {
           "bullets": ["Branching, commits, and code reviews for projects"]
@@ -510,8 +550,8 @@
     },
     {
       "slug": "linux",
-      "label": "Linux system administration",
-      "priority": 7,
+      "label": "Linux",
+      "priority": 4,
       "categories": {
         "software": {
           "bullets": [
@@ -523,19 +563,9 @@
       }
     },
     {
-      "slug": "shell",
-      "label": "Shell scripting",
-      "priority": 6,
-      "categories": {
-        "software": {
-          "bullets": ["Automated tasks and local dev tooling on Linux/RPi"]
-        }
-      }
-    },
-    {
       "slug": "java",
       "label": "Java",
-      "priority": 3,
+      "priority": 7,
       "categories": {
         "software": {
           "bullets": ["Used for FTC robotics programming"],
@@ -546,7 +576,7 @@
     {
       "slug": "cpp",
       "label": "C++",
-      "priority": 3,
+      "priority": 7,
       "categories": {
         "software": {
           "bullets": ["Coursework and small utilities"]
@@ -556,10 +586,11 @@
     {
       "slug": "csharp",
       "label": "C#",
-      "priority": 3,
+      "priority": 4,
       "categories": {
         "software": {
-          "bullets": ["Exposure via desktop tools and experiments"]
+          "bullets": ["Designed desktop applications for automation"],
+          "projects": ["vba-intellisense"]
         }
       }
     }

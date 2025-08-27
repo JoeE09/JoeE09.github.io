@@ -121,11 +121,14 @@ export default function HomePage() {
               <h2 className="text-2xl font-semibold text-customGreen mb-4 text-center ">
                 {mainSkill.title}
               </h2>
-              {skillsJson.skills
-                .filter((skill) => Object.keys(skill.categories).includes(mainSkill.id))
-                .map((skill) => (
-                  <SkillsBubble key={skill.slug} skill={skill} pillarId={mainSkill.id} />
-                ))}
+              <div className="flex flex-wrap gap-4">
+                {skillsJson.skills
+                  .filter((skill) => Object.keys(skill.categories).includes(mainSkill.id))
+                  .sort((a, b) => a.priority - b.priority)
+                  .map((skill) => (
+                    <SkillsBubble key={skill.slug} skill={skill} pillarId={mainSkill.id} />
+                  ))}
+              </div>
             </div>
           ))}
         </div>
