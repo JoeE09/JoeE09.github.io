@@ -1,7 +1,4 @@
 import ProjectHero from "@/components/ProjectHero";
-import Links from "@/components/ProjectLinks";
-import VideoDemo from "@/components/VideoDemo";
-import TechnologiesList from "@/components/TechnologiesList";
 import SkillsList from "@/components/SkillsList";
 import { useRef } from "react";
 
@@ -15,8 +12,8 @@ export default function SeniorProject() {
         animationDelay={0.01}
         title="Senior Engineering Project"
         hero={{
-          left: {"title":"My Role","bullets":["Participated with a team of 15 students to design an industrial warehouse (structural, mechanical, materials handling) for a hypothetical client.","Tasked to design an overhead crane system and select paint booths for the production line.","Had to ensure that the crane system and paint booths were integrated with the overall building design and met all relevant safety standards."]},
-          right: {"title":"My Work","bullets":["Met with client and other team members to establish project requirements and constraints.","Researched and communicated with vendors to select equipment that met client specifications.","Conducted load analysis studies and calculated load combinations for the crane supports using relevant standards.","Selected and detailed appropriate steel components/assemblies to meet all loading and safety requirements in accordance with relevant codes and standards.","Created detailed drawings specifying equipment layouts and assembly details."]}
+          left: {"title":"My Role","bullets":["Collaborated with a 15-member cross-disciplinary team to design an industrial warehouse.","Personally responsible for an overhead crane system design and selection of paint booths for the production line.","Had to ensure that the crane system and paint booths were integrated with the building design and safety compliant."]},
+          right: {"title":"My Work","bullets":["Defined requirements and constraints with the client and team members.","Researched vendors to select equipment that met client specifications.","Analyzed structural loads and designed crane support structure.","Created detailed AutoCAD drawings specifying equipment layouts and assembly details."]}
         }}
       />
       <main className="max-w-6xl px-6 py-10 mx-auto">
@@ -54,11 +51,7 @@ export default function SeniorProject() {
           <div className="">
             <h3 className="text-2xl font-semibold text-customGreen mb-2 text-center ">Technical Challenges</h3>
             <ul className="list-inside list-disc ml-2 text-gray-700 space-y-1 mb-2">
-              <li>
-                <ul className="list-inside list-disc ml-6 text-gray-700 ">
-                  <li><strong>Analysis of built-up members:</strong>  Calculating section properties of built-up members took extensive analysis, as well as stress and deflection analysis under combined loads such as shear, torsion, and biaxial bending.</li>
-                </ul>
-              </li>
+              <li><strong>Analysis of built-up members:</strong>  Calculating section properties of built-up members took extensive analysis, as well as stress and deflection analysis under combined loads such as shear, torsion, and biaxial bending.</li>
               <li><strong>Worst-Case Loading:</strong>  Support members had to be checked for simultaneous crane usage, dynamic impact, and bracing under bumper loads. For example, end-stop impacts were modeled using work-energy methods and conservative assumptions about bumper deformation.</li>
               <li><strong>Fatigue and Serviceability:</strong>  Crane runway connections are subject to repetitive stress; detailing had to allow end rotation and minimize fatigue. Tolerances were also tight — deflection limits were L/600 vertically and L/400 laterally.</li>
               <li><strong>Cross-Team Coordination:</strong>  The crane support had to integrate with HVAC clearances, floor plans, and structural foundations. Similarly, the paint booths had to be placed for efficient material movement while respecting airflow, drainage, and structural loading.</li>

@@ -7,7 +7,7 @@ interface ProjectsSectionProps {
 
 export default function ProjectsSection({ exclude = [] }: ProjectsSectionProps) {
   const filteredProjects = projects.filter(
-    (project) => !exclude.includes(project.title.toLowerCase().replace(/\s+/g, "-"))
+    (project) => !exclude.includes(project.slug)
   );
 
   return (

@@ -6,16 +6,15 @@ banner: /images/crane-details.png
 # Hero
 
 ### My Role
-- Participated with a team of 15 students to design an industrial warehouse (structural, mechanical, materials handling) for a hypothetical client.
-- Tasked to design an overhead crane system and select paint booths for the production line.
-- Had to ensure that the crane system and paint booths were integrated with the overall building design and met all relevant safety standards.
+- Collaborated with a 15-member cross-disciplinary team to design an industrial warehouse.
+- Personally responsible for an overhead crane system design and selection of paint booths for the production line.
+- Had to ensure that the crane system and paint booths were integrated with the building design and safety compliant.
 
 ### My Work
-- Met with client and other team members to establish project requirements and constraints.
-- Researched and communicated with vendors to select equipment that met client specifications.
-- Conducted load analysis studies and calculated load combinations for the crane supports using relevant standards.
-- Selected and detailed appropriate steel components/assemblies to meet all loading and safety requirements in accordance with relevant codes and standards.
-- Created detailed drawings specifying equipment layouts and assembly details.
+- Defined requirements and constraints with the client and team members.
+- Researched vendors to select equipment that met client specifications.
+- Analyzed structural loads and designed crane support structure.
+- Created detailed AutoCAD drawings specifying equipment layouts and assembly details.
 
 # Div className="max-w-3xl mx-auto mt-6"
 ### Overview And Technical Constraints

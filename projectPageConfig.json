@@ -40,8 +40,8 @@
     "lastGenerated": "2025-06-25T02:35:57.091Z"
   },
   "senior-project": {
-    "locked": false,
+    "locked": true,
     "outputFile": "src/pages/projects/SeniorProject.tsx",
-    "lastGenerated": "2025-08-27T16:44:39.471Z"
+    "lastGenerated": "2025-08-27T16:53:49.866Z"
   }
 }
