@@ -42,9 +42,25 @@
     "company": "Abeka"
   },
   {
+    "slug": "home-environment-controller",
+    "title": "Home Environment Controller",
+    "description": "An IoT-based system that monitors and controls home environmental factors with automated alerts, smart devices, and dashboards",
+    "imageUrl": "/images/projectCards/home-environment-controller.svg",
+    "status": "In Progress",
+    "company": "Personal"
+  },
+  {
+    "slug": "home-lab-infrastructure",
+    "title": "Home Lab Infrastructure",
+    "description": "A self-hosted home lab providing secure networking, containerized services, local data storage, and IoT integration via Raspberry Pi.",
+    "imageUrl": "/images/projectCards/home-lab-infrastructure.svg",
+    "status": "In Progress",
+    "company": "Personal"
+  },
+  {
     "slug": "sleep-trend-analyzer",
     "title": "Sleep Trend Analyzer",
-    "description": "Collects, analyzes, and visualizes sleep data to identify links between habits and sleep",
+    "description": "Analytics project that collects and visualizes sleep/environmental data, uncovering patterns between habits, environment, and sleep quality.",
     "imageUrl": "/images/projectCards/sleep-icon.svg",
     "hoverGif": "/videos/logging-api.mp4",
     "status": "In Progress",
