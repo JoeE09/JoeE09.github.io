@@ -5,15 +5,15 @@ title: Sleep Trend Analyzer
 # Hero textClass="text-gray-200 space-y-1" headerClass="font-bold text-lg text-gray-200 mb-2" titleClass="text-4xl relative font-extrabold text-customGreen mb-6 text-center drop-shadow-glow"
 
 ### The Problem
-- Have trouble with consistent, quality sleep
-- No way to know sleep patterns or what habits most affect my sleep
-- Want to combine data from multiple sources to get a complete picture
+- I have trouble with consistent sleep and feeling refreshed in the morning
+- I have no way to know sleep patterns or what habits most affect my sleep
+- I need to have better sleep quality to improve overall productivity
 
-### My Plan / Approach
-- Design a unified system combining Fitbit data, manual logs, and sensor data
-- Develop a custom mobile interface for easy logging
-- Develop dashboards from a unified database to visualize sleep patterns
-- Use machine learning to uncover which factors most affect sleep quality
+### My Solution
+- Designed a data pipeline combining manual logs, fitbit sleep data, and environmental data
+- Developed a custom mobile interface for seamless manual logging
+- Developed dashboards from a unified database to visualize sleep patterns
+- Using machine learning and other analytics to identify trends and correlations
 
 *Note: All visuals and data shown are anonymized and may not accurately reflect real sleep patterns.* className="text-center text-sm text-gray-500"
 
@@ -45,13 +45,12 @@ My goal is to create a system to better understand my sleep habits so I can take
 - *Daily Habits:* exercise, screen time, stress levels
 - *Environmental Factors:* temperature, humidity, air quality
 # Div/
-*Note: There could be many more variables that affect sleep quality, but I am starting with these to keep the project manageable. Additionally, I am not tracking caffeine or alcohol intake, as I do neither.*
 
 ## Methods of Data Collection className="font-semibold text-customGreen text-xl"
 # Div className="ml-4"
-- **Manual Logging:** Developed a custom mobile interface to log bed time, wake time, subjective quality ratings, and daily habits.
-- **Fitbit and API:** Wore a Fitbit to bed and used the Fitbit API (via Python) to pull sleep data like sleep duration, sleep latency, and time awake. Some Fitbit data (like sleep stages) is less accurate, so it will not be a primary focus.
-- **Environmental Sensors:** Used an ESP32 board with sensors to send live telemetry data like temperature, humidity, and air quality.
+- **Manual Logging:** Mobile logging interface to log daily energy/alertness/etc. with a few taps
+- **Fitbit and API:** Python script to pull my sleep data from the Fitbit API
+- **Environmental Sensors:** ESP32 sensors sending temperature, humidity, and air quality data to my home hub via MQTT
 # Div/
 
 # Div/
@@ -59,14 +58,13 @@ My goal is to create a system to better understand my sleep habits so I can take
 # Div
 
 ### Current Progress
-- I built a custom mobile interface for logging sleep data that integrates directly with Google Sheets via Apps Script
-- I have a Python script scaffolded that uses Flask to pull from the Fitbit API and store the data in a database
-- I have the ESP32 board setup purchased, but not yet set up
+- Custom mobile interface (via Apple Shortcuts) to manually log factors and push to database via custom Apps Script API endpoint
+- Python script to pull API data scaffolded
+- ESP32 board wired up / data logging infrastructure set up
 
 ### Next Steps
-- Set up the ESP32 board with sensors to log environmental data
-- Finish the Python script to pull data from Fitbit and store it in the database
-- Combine and transform all data into a single database for analysis
+- Program ESP32 to send data via MQTT
+- Consolidate all data sources into a unified database
 - Build a dashboard to visualize and analyze the data
 - Integrate machine learning to identify correlations between habits and sleep quality
 
@@ -86,28 +84,25 @@ My goal is to create a system to better understand my sleep habits so I can take
 Some sample visualizations of sleep data
 
 ### Technical Challenges
-So far, the main challenge has been setting up a seamless logging interface that it easy to configure and effortless enough to use consistently. Here were some considerations: className="text-md text-gray-700"
-- **Mobile Interface Design:** I created a simple logging interface on my phone that could log data with a few taps.
-- **Data Integration:** I developed an API via Google Apps Script so I could send data from my phone to a Google Sheet and have the program automatically enter the data.
-- **Logging Forms:** I created a JSON-based configuration system that allows easy adding of new logging forms. This took some work to implement in Apple Shortcuts, since it is not made for complex data structures.
+- **Mobile Logging Setup:** In order to consistently do manual logs, I needed a frictionless process I could do reliably. Creating such an interface required several steps, including designing custom forms/integrating those into apple shortcuts, building a backend API to receive the data, and then properly storing and managing the data.
+- **Data Transformation:** Transforming raw data and telemetry into a usable format took various steps, including analyzing sleep/wake times to determine which days, cross-referencing environmental data with sleep times to determine temperature gradients across sleep cycles.
+- **Complex Data Correlations:** Identifying and analyzing complex correlations between various data points (e.g., how changes in room temperature affect sleep quality) required advanced statistical techniques and machine learning models.
 
-Some other challenges I expect to face including secure integration of the ESP32 sensors to the network, handling gaps in data (from failure to log / wear Fitbit) and calibrating the machine learning model to accurately identify patterns.
 
 # TwoColumns/
 
 # TwoColumns className="mt-2"
 # Technologies
+- Python
 - Google Sheets
 - Google Apps Script
 - Apple Shortcuts
-- Python
 - API Integration
 
 # Skills
 - Data Analytics
-- Live Telemetry
-- IOT Integration
-- Machine Learning
+- IoT Integration
 - Mobile Interface Design
-- KPI Development
+- Machine Learning
+- Data-Driven Process Improvement
 # TwoColumns/

@@ -172,7 +172,7 @@
             "Configured sampling, filtering, and logging"
           ],
           "experience": ["eagle-systems"],
-          "projects": ["smart-home-controls"]
+          "projects": ["home-environment-controller"]
         }
       }
     },
@@ -229,7 +229,7 @@
             "Actuation for dehumidifier/thermostat and other smart home devices",
             "Connection to cloud infrastructure for monitoring"
           ],
-          "projects": ["smart-home-controls"]
+          "projects": ["home-environment-controller"]
         }
       }
     },
@@ -243,13 +243,13 @@
           "bullets": [
             "Always-on controller; MQTT broker, smart home controller"
           ],
-          "projects": ["smart-home-controls"]
+          "projects": ["home-environment-controller", "home-lab-infrastructure", "sleep-trend-analyzer"]
         },
         "software": {
           "bullets": [
             "Self-hosted services; logging and scheduled tasks"
           ],
-          "projects": ["smart-home-controls"]
+          "projects": ["home-environment-controller", "home-lab-infrastructure"]
         }
       }
     },
@@ -261,7 +261,7 @@
         "controls": {
           "bullets": ["Integrations for sensor nodes and IoT experiments"]
         },
-        "projects": ["smart-home-controls", "sleep-trend-analyzer"]
+        "projects": ["home-environment-controller", "sleep-trend-analyzer"]
       }
     },
     {
@@ -275,13 +275,13 @@
             "Ingested sensor broadcasts; topic filtering & thresholds",
             "Triggered device actions from rule engine"
           ],
-          "projects": ["smart-home-controls"]
+          "projects": ["home-environment-controller", "home-lab-infrastructure", "sleep-trend-analyzer"]
         },
         "software": {
           "bullets": [
             "Broker on RPi; retention and structured logging for debug"
           ],
-          "projects": ["smart-home-controls"]
+          "projects": ["home-environment-controller", "home-lab-infrastructure"]
         }
       }
     },
@@ -426,20 +426,20 @@
             "Data transforms for forecasting/reporting",
             "API pulls with requests"
           ],
-          "projects": ["sleep-trend-analyzer", "forecasting-automation-pipeline"]
+          "projects": ["sleep-trend-analyzer", "forecasting-automation-pipeline", "home-environment-controller"]
         },
         "software": {
           "bullets": [
             "Small desktop/web tools; automation scripts",
             "RPi services for logging and scheduled jobs"
           ],
-          "projects": ["smart-home-controls"]
+          "projects": ["home-environment-controller"]
         },
         "controls": {
           "bullets": [
             "MQTT client for sensor ingest and rule evaluation"
           ],
-            "projects": ["smart-home-controls"]
+            "projects": ["home-environment-controller"]
         }
       }
     },
@@ -464,7 +464,7 @@
             "Basic queries/joins for analysis and logging",
             "Lightweight local DBs for prototypes"
           ],
-          "projects": []
+          "projects": ["home-environment-controller", "home-lab-infrastructure"]
         }
       }
     },
@@ -474,10 +474,12 @@
       "priority": 6,
       "categories": {
         "data": {
-          "bullets": ["Pulled external data into pipelines for reporting"]
+          "bullets": ["Pulled external data into pipelines for reporting"],
+          "projects": ["forecasting-automation-pipeline", "sleep-trend-analyzer", "home-environment-controller"]
         },
         "software": {
-          "bullets": ["Integrated services for custom tools and automations"]
+          "bullets": ["Integrated services for custom tools and automations"],
+          "projects": ["sleep-trend-analyzer", "home-environment-controller"]
         }
       }
     },
@@ -522,8 +524,11 @@
       "priority": 5,
       "categories": {
         "software": {
-          "bullets": ["Client logic and utilities for web tools"],
-          "projects": ["portfolio-website"]
+          "bullets": [
+            "Client logic and utilities for web tools",
+            "Automations in Office Scripts"
+          ],
+          "projects": ["portfolio-website", "abeka-qa-automations"]
         }
       }
     },
@@ -558,7 +563,7 @@
             "Homelab/RPi services; shell scripting and cron",
             "Lightweight security policies and user permissions"
           ],
-          "projects": ["smart-home-controls"]
+          "projects": ["home-environment-controller", "home-lab-infrastructure"]
         }
       }
     },
@@ -569,7 +574,7 @@
       "categories": {
         "software": {
           "bullets": ["Used for FTC robotics programming"],
-          "experience": []
+          "experience": ["ftc-robotics"]
         }
       }
     },
@@ -582,7 +587,8 @@
           "bullets": [
             "Used extensively in college coursework",
             "Programmed microcontroller workflows (ESP32)"
-          ]
+          ],
+          "projects": ["home-environment-controller", "sleep-trend-analyzer"]
         }
       }
     },

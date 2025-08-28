@@ -80,6 +80,51 @@ export const SkillsBubble: React.FC<SkillsBubbleProps> = ({
 
   const wrapperRef = useRef<HTMLDivElement>(null);
 
+  // add near other refs/state
+  const panelRef = useRef<HTMLDivElement>(null);
+  const [alignRight, setAlignRight] = React.useState(false);
+  const [dropUp, setDropUp] = React.useState(false);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const GAP = 8; // px padding from viewport edge
+
+    const position = () => {
+      if (!wrapperRef.current || !panelRef.current) return;
+
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+
+      // where the button is
+      const trigger = wrapperRef.current.getBoundingClientRect();
+
+      // ensure the panel has a measured size
+      const panelEl = panelRef.current;
+      // temporarily make it visible for measurement if needed
+      // (not required here since it's already open)
+      const panelW = panelEl.offsetWidth;
+      const panelH = panelEl.offsetHeight;
+
+      // will the panel overflow the right edge if we left-align?
+      const overflowRight = trigger.left + panelW > vw - GAP;
+      // will it overflow the bottom edge if we drop down?
+      const overflowBottom = trigger.bottom + panelH > vh - GAP;
+
+      setAlignRight(overflowRight);
+      setDropUp(overflowBottom);
+    };
+
+    position();
+    window.addEventListener("resize", position, { passive: true });
+    window.addEventListener("scroll", position, { passive: true });
+
+    return () => {
+      window.removeEventListener("resize", position);
+      window.removeEventListener("scroll", position);
+    };
+  }, [isOpen]);
+
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
@@ -139,8 +184,13 @@ export const SkillsBubble: React.FC<SkillsBubbleProps> = ({
       {/* Details panel */}
       {isOpen && (
         <div
+          ref={panelRef}
           id={panelId}
-          className="absolute mt-2 w-[min(28rem,90vw)] rounded-xl border border-emerald-200 bg-white p-4 shadow-lg z-30"
+          className={[
+            "absolute z-30 w-[min(28rem,90vw)] rounded-xl border border-emerald-200 bg-white p-4 shadow-lg",
+            dropUp ? "bottom-full mb-2" : "top-full mt-2",
+            alignRight ? "right-0" : "left-0",
+          ].join(" ")}
           role="region"
           aria-label={`${skill.label} details`}
         >
