@@ -18,10 +18,18 @@ title: Home Environment Controller
 
 
 ### Overview
-This project aims to create a comprehensive system for monitoring and controlling my home environment.
-- Desire to optimize my living environment (ensure clean air, proper humidity, ideal temperature)
-- Curiosity about my environment (e.g. humidity/temperature variation across rooms, air quality)
-- Desire to understand how environmental factors impact comfort and energy usage. For example, I'd like to determine how the temperature throughout the night affects sleep quality, and maybe experiment with different automated thermostat settings during the night.
+My goal in this project is to create a comprehensive system for monitoring and controlling my home environment. I plan to do the following:
+- Optimize environment variables including clean air, proper humidity, ideal temperature
+- Better understand my living environment, such as humidity/temperature variation across rooms and air quality
+- Understand the relationship between my home environment and other factors affecting well-being (e.g. study relationship between temperature and sleep quality)
+
+### Main Features (Planned)
+- Real-time monitoring of environmental data.
+- Automated control of smart devices based on user-defined rules.
+- Historical data analysis and reporting via SQLite database.
+- User-friendly dashboard for visualizing data and managing settings.
+- Alerts and notifications for significant environmental changes.
+- Locally hosted solution for privacy/security.
 
 ### Main Components
 
@@ -33,14 +41,6 @@ This project aims to create a comprehensive system for monitoring and controllin
 - **Smart Devices:** Currently a smart thermostat/smart plugs (connected to dehumidifier) for controlling temp/humidity.
 - **Notification Service:** Sending alerts and notifications based on environmental changes.
 - **Dashboard:** Visualizing environmental data and system status, setting environmental set points and thresholds, and creating automation schedules in a user-friendly interface.
-
-### Main Features
-- Real-time monitoring of environmental data.
-- Automated control of smart devices based on user-defined rules.
-- Historical data analysis and reporting via SQLite database.
-- User-friendly dashboard for visualizing data and managing settings.
-- Alerts and notifications for significant environmental changes.
-- Locally hosted solution for privacy/security.
 
 # TwoColumns className="mt-2"
 
