@@ -16,14 +16,14 @@ title: Home Environment Controller
 - (Planned) Develop automations and rules for adjusting settings based on real-time data
 - (Planned) Create dashboards for visualizing data and managing settings
 
-
-### Overview
+# Div className="max-w-2xl mx-auto"
+### Overview class="mb-4"
 My goal in this project is to create a comprehensive system for monitoring and controlling my home environment. I plan to do the following:
 - Optimize environment variables including clean air, proper humidity, ideal temperature
 - Better understand my living environment, such as humidity/temperature variation across rooms and air quality
 - Understand the relationship between my home environment and other factors affecting well-being (e.g. study relationship between temperature and sleep quality)
 
-### Main Features (Planned)
+### Main Features (Planned) class="mb-4"
 - Real-time monitoring of environmental data.
 - Automated control of smart devices based on user-defined rules.
 - Historical data analysis and reporting via SQLite database.
@@ -31,7 +31,7 @@ My goal in this project is to create a comprehensive system for monitoring and c
 - Alerts and notifications for significant environmental changes.
 - Locally hosted solution for privacy/security.
 
-### Main Components
+### Main Components class="mb-4"
 
 - **Raspberry Pi Hub:** Always-on central controller for data processing, automation, and dashboard hosting (analogous to a PLC + SCADA system).
 - **ESP32 Sensors:** Measuring temperature, humidity, and air quality.
@@ -42,9 +42,7 @@ My goal in this project is to create a comprehensive system for monitoring and c
 - **Notification Service:** Sending alerts and notifications based on environmental changes.
 - **Dashboard:** Visualizing environmental data and system status, setting environmental set points and thresholds, and creating automation schedules in a user-friendly interface.
 
-# TwoColumns className="mt-2"
-
-### Current Functionality
+### Current Functionality class="mb-4"
 - Raspberry Pi controller and IoT network running.
 - ESP32 sensors purchased and layouts developed.
 - Database schema and storage system designed.
@@ -58,7 +56,7 @@ My goal in this project is to create a comprehensive system for monitoring and c
 - Develop and enforce control rules and automations.
 - Explore advanced analytics and machine learning for deeper insights.
 
-  # TwoColumns/
+# Div/
 
 # TwoColumns className="mt-2"
 # Technologies

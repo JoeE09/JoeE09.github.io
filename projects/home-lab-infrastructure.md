@@ -35,8 +35,6 @@ This lab serves as a foundation for some of my controls/analytics projects. It i
 - **Messaging & Storage Backbone:** Mosquitto (MQTT) on the Pi and a local SQLite DB.
 - **Docker:** Containerized applications for easy deployment and management.
 
-# TwoColumns/
-
 ### Current Functionality
 - Pi home lab online; services run in Docker.
 - VLAN-segmented network with controller management.
@@ -46,6 +44,8 @@ This lab serves as a foundation for some of my controls/analytics projects. It i
 ### Next Steps
 - Formalize backup strategy (config volumes + DB snapshots) in case of Pi failure.
 - Publish a minimal internal status page (service list, links, notes) to assist in system maintenance.
+
+# TwoColumns/
 
 # TwoColumns className="mt-2"
 # Technologies

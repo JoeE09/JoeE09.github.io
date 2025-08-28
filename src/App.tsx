@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import ContactForm from "./pages/ContactForm";
 import ProjectDetail from "./pages/ProjectDetail.tsx";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import IconAttributions from './pages/IconAttributions.tsx';
 
 export default function App() {
   const [showHeader, setShowHeader] = useState(true);
@@ -78,6 +79,7 @@ export default function App() {
         <Route path="/" element={<HomePage/>} />
         <Route path="/contact" element={<ContactForm/>} />
         <Route path="/projects/:slug" element={<ProjectDetail />} />
+        <Route path="/icons" element={<IconAttributions />} />
         <Route path="*" element={<div className="p-6 text-red-500">Page not found</div>} />
       </Routes>
       
@@ -93,7 +95,11 @@ export default function App() {
         </div>
         © 2025 Joseph Ensminger
         <small className="text-gray-400 text-xs mt-8 block text-center">
-          All trademarks and logos are the property of their respective owners and are used here for informational and educational purposes only.
+          All trademarks and logos are the property of their respective owners and are used here for informational and educational purposes only. {" "}
+          <Link to="/icons" className="text-gray-500 underline">
+            View icon attributions
+          </Link>
+          .
           <br />
           <br />
           Note: Some logos are represented by generic icons due to trademark/copyright restrictions. All displayed icons are either in the public domain or permissively licensed.

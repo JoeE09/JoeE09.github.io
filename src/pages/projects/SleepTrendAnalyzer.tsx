@@ -13,8 +13,8 @@ export default function SleepTrendAnalyzer() {
         animationDelay={0.01}
         title="Sleep Trend Analyzer"
         hero={{
-          left: {"title":"The Problem","bullets":["Have trouble with consistent, quality sleep","No way to know sleep patterns or what habits most affect my sleep","Want to combine data from multiple sources to get a complete picture"]},
-          right: {"title":"My Plan / Approach","bullets":["Design a unified system combining Fitbit data, manual logs, and sensor data","Develop a custom mobile interface for easy logging","Develop dashboards from a unified database to visualize sleep patterns","Use machine learning to uncover which factors most affect sleep quality"]}
+          left: {"title":"The Problem","bullets":["I have trouble with consistent sleep and feeling refreshed in the morning","I lacked insight into how sleep schedules and habits affect sleep quality","I wanted data-driven ways to improve my sleep and daytime energy"]},
+          right: {"title":"My Solution","bullets":["Designed a data pipeline combining manual logs, fitbit sleep data, and environmental data","Developed a easy-to-use mobile logger with Apple Shortcuts / Custom Apps Script API","(Planned) develop dashboards from a unified database to visualize sleep patterns","(Planned) use statistics/ML techniques to extract insights into what factors most affect sleep quality"]}
         }}
       />
       <main className="max-w-6xl px-6 py-10 mx-auto">
@@ -27,13 +27,13 @@ export default function SleepTrendAnalyzer() {
           <div className="">
             <div className="">
               <h3 className="text-2xl font-semibold text-customGreen mb-2 text-center ">Overview and System Design</h3>
-              <p className="text-md text-gray-700">My goal is to create a system to better understand my sleep habits so I can take steps to improve my sleep health. I plan to do the following:</p>
+              <p className="text-md text-gray-700">My goal is to create a system to better understand my sleep habits so I can take steps to improve my sleep health. Here is my plan:</p>
             </div>
             <div className="ml-4">
               <ul className="list-inside list-disc ml-2 text-gray-700 space-y-1 mb-2">
-                <li>Develop a system to track variables related to sleep quality</li>
-                <li>Use data visualization and machine learning to find relationships between my habits and sleep quality</li>
-                <li>Apply the insights I discover to improve my overall sleep quality</li>
+                <li><strong>Data Collection:</strong>  System to extract raw data from various sources.</li>
+                <li><strong>Data Storage & Transformation:</strong>  Transform raw data into a unified format and store it in a database keyed by sleep session.</li>
+                <li><strong>Analysis & Action:</strong>  Create dashboards and algorithms to uncover practical steps to improve my sleep quality based on the data.</li>
               </ul>
             </div>
             <div className="">
@@ -54,15 +54,14 @@ export default function SleepTrendAnalyzer() {
                 <li><em>Environmental Factors:</em>  temperature, humidity, air quality</li>
               </ul>
             </div>
-            <p className="text-md text-gray-700 mb-4"><em>Note: There could be many more variables that affect sleep quality, but I am starting with these to keep the project manageable. Additionally, I am not tracking caffeine or alcohol intake, as I do neither.</em></p>
             <div className="">
               <h2 className="font-semibold text-customGreen text-xl">Methods of Data Collection</h2>
             </div>
             <div className="ml-4">
               <ul className="list-inside list-disc ml-2 text-gray-700 space-y-1 mb-2">
-                <li><strong>Manual Logging:</strong>  develop a custom mobile interface to log bed time, wake time, subjective quality ratings, and daily habits.</li>
-                <li><strong>Fitbit and API:</strong>  wear a Fitbit to bed and use the Fitbit API (via Python) to pull sleep data like sleep duration, sleep latency, and time awake. Some Fitbit data (like sleep stages) is less accurate, so it will not be a primary focus.</li>
-                <li><strong>Environmental Sensors:</strong>  use an ESP32 board with sensors to send live telemetry data like temperature, humidity, and air quality.</li>
+                <li><strong>Manual Logging:</strong>  Mobile logging interface to log daily energy/alertness/etc. with a few taps</li>
+                <li><strong>Fitbit and API:</strong>  Python script to pull my sleep data from the Fitbit API</li>
+                <li><strong>Environmental Sensors:</strong>  ESP32 sensors sending temperature, humidity, and air quality data to my home hub via MQTT</li>
               </ul>
             </div>
           </div>
@@ -70,18 +69,16 @@ export default function SleepTrendAnalyzer() {
             <div className="">
               <h3 className="text-2xl font-semibold text-customGreen mb-2 text-center ">Current Progress</h3>
               <ul className="list-inside list-disc ml-2 text-gray-700 space-y-1 mb-2">
-                <li>I built a custom mobile interface in Apple Shortcuts for logging sleep data that integrates directly with Google Sheets via Apps Script</li>
-                <li>I have a Python script scaffolded that uses Flask to pull from the Fitbit API and store the data in a database</li>
-                <li>I have the ESP32 board setup purchased, but not yet set up</li>
-                <li>I have a few months' worth of collected data to analyze</li>
+                <li>Custom mobile interface (via Apple Shortcuts) to manually log factors and push to database via custom Apps Script API endpoint</li>
+                <li>Python script to pull API data scaffolded</li>
+                <li>ESP32 board wired up / data logging infrastructure set up</li>
               </ul>
             </div>
             <div className="">
               <h3 className="text-2xl font-semibold text-customGreen mb-2 text-center ">Next Steps</h3>
               <ul className="list-inside list-disc ml-2 text-gray-700 space-y-1 mb-2">
-                <li>Set up the ESP32 board with sensors to log environmental data</li>
-                <li>Finish the Python script to pull data from  the Fitbit API and store it in the database</li>
-                <li>Combine and transform all data into a single source for analysis</li>
+                <li>Program ESP32 to send data via MQTT</li>
+                <li>Consolidate all data sources into a unified database</li>
                 <li>Build a dashboard to visualize and analyze the data</li>
                 <li>Integrate machine learning to identify correlations between habits and sleep quality</li>
               </ul>
@@ -100,23 +97,20 @@ export default function SleepTrendAnalyzer() {
           </div>
           <div className="">
             <h3 className="text-2xl font-semibold text-customGreen mb-2 text-center ">Technical Challenges</h3>
-            <p className="text-md text-gray-700">So far, the main challenge has been setting up a seamless logging interface that is easy to configure and use consistently.</p>
             <ul className="list-inside list-disc ml-2 text-gray-700 space-y-1 mb-2">
-              <li><strong>Mobile Interface Design:</strong>  I created a simple logging interface on my phone that could log data with a few taps.</li>
-              <li><strong>Data Integration:</strong>  I developed an API via Google Apps Script to send data from my phone to a Google Sheet automatically.</li>
-              <li><strong>Logging Forms:</strong>  I created a JSON-based configuration system that allows easy adding of new logging forms.</li>
+              <li><strong>Mobile Logging Setup:</strong>  To design a logger simple enough to use regularly, I used custom forms in Apple Shortcuts connected to a custom API endpoint in Apps Script. Logging manual metrics now takes just a few seconds.</li>
+              <li><strong>Data Transformation:</strong>  Several transformations were needed to obtain a unified data format and parse timestamps into different sleep intervals/sessions.</li>
             </ul>
-            <p className="text-md text-gray-700 mb-4">Some other challenges I expect to face including secure integration of the ESP32 sensors to the network, handling gaps in data (from failure to log / wear Fitbit) and calibrating the machine learning model to accurately identify patterns.</p>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-2">
           <section className="mt-10">
             <h2 className="text-2xl font-semibold text-customGreen mb-4 text-center ">Technologies Used</h2>
-            <TechnologiesList  technologies={["Google Sheets","Google Apps Script","Apple Shortcuts","Python","API Integration"]} />
+            <TechnologiesList  technologies={["Python","Google Sheets","Google Apps Script","Apple Shortcuts","API Integration"]} />
           </section>
           <section className="mt-10">
             <h2 className="text-2xl font-semibold text-customGreen mb-4 text-center ">Skills Used</h2>
-            <SkillsList  skills={["Data Analytics","Live Telemetry","IOT Integration","Machine Learning","Mobile Interface Design"]} />
+            <SkillsList  skills={["Data Analytics","IoT Integration","Mobile Interface Design","Data-Driven Process Improvement"]} />
           </section>
         </div>
       </main>

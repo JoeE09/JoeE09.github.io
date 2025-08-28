@@ -28,9 +28,16 @@ Many of the icons on the site are sourced from:
   Licensed under the [MIT License](https://opensource.org/licenses/MIT).  
   © 2021 Paweł Kuna.
 
-Flowchart icons may have been modified for size, color, or format
+- **[Simple Icons](https://simpleicons.org/)**  
+  Licensed under the [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/).  
+  © Simple Icons Contributors.
 
-Some brand-related icons (Python, GitHub, etc.) are used under fair use for educational purposes and are not modified.
+Flowchart icons may have been modified for size, color, or format.
+
+**Individual attributions:**
+- Raspberry Pi is a trademark of Raspberry Pi Ltd.
+
+Brand-related icons are used under nominative fair use for educational purposes and are not modified.
 Other brand-related icons replaced with generic alternatives due to copyright/trademark restrictions.
 
 This repository is licensed under the CC BY 4.0 License. Feel free to use or adapt this format or content with proper attribution.

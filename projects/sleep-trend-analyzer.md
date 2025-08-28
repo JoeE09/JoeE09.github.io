@@ -1,5 +1,6 @@
 ---
 title: Sleep Trend Analyzer
+banner: /images/projectPages/sleep-tracker-banner.png
 ---
 
 # Hero textClass="text-gray-200 space-y-1" headerClass="font-bold text-lg text-gray-200 mb-2" titleClass="text-4xl relative font-extrabold text-customGreen mb-6 text-center drop-shadow-glow"
