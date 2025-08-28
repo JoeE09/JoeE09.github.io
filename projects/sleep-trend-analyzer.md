@@ -6,14 +6,14 @@ title: Sleep Trend Analyzer
 
 ### The Problem
 - I have trouble with consistent sleep and feeling refreshed in the morning
-- I have no way to know sleep patterns or what habits most affect my sleep
-- I need to have better sleep quality to improve overall productivity
+- I lacked insight into how sleep schedules and habits affect sleep quality
+- I wanted data-driven ways to improve my sleep and daytime energy
 
 ### My Solution
 - Designed a data pipeline combining manual logs, fitbit sleep data, and environmental data
-- Developed a custom mobile interface for seamless manual logging
-- Developed dashboards from a unified database to visualize sleep patterns
-- Using machine learning and other analytics to identify trends and correlations
+- Developed a easy-to-use mobile logger with Apple Shortcuts / Custom Apps Script API
+- (Planned) develop dashboards from a unified database to visualize sleep patterns
+- (Planned) use statistics/ML techniques to extract insights into what factors most affect sleep quality
 
 *Note: All visuals and data shown are anonymized and may not accurately reflect real sleep patterns.* className="text-center text-sm text-gray-500"
 
@@ -24,11 +24,11 @@ System design overview showing data flow from input sources to analysis and visu
 
 # Div
 ### Overview and System Design
-My goal is to create a system to better understand my sleep habits so I can take steps to improve my sleep health. I plan to do the following: className="text-md text-gray-700"
+My goal is to create a system to better understand my sleep habits so I can take steps to improve my sleep health. Here is my plan: className="text-md text-gray-700"
 # Div className="ml-4"
-- Develop a system to track variables related to sleep quality
-- Use data visualization and machine learning to find relationships between my habits and sleep quality
-- Apply the insights I discover to improve my overall sleep quality
+- **Data Collection:** System to extract raw data from various sources.
+- **Data Storage & Transformation:** Transform raw data into a unified format and store it in a database keyed by sleep session.
+- **Analysis & Action:** Create dashboards and algorithms to uncover practical steps to improve my sleep quality based on the data.
 # Div/
 
 ## Variables To Track className="font-semibold text-customGreen text-xl"
@@ -84,10 +84,8 @@ My goal is to create a system to better understand my sleep habits so I can take
 Some sample visualizations of sleep data
 
 ### Technical Challenges
-- **Mobile Logging Setup:** In order to consistently do manual logs, I needed a frictionless process I could do reliably. Creating such an interface required several steps, including designing custom forms/integrating those into apple shortcuts, building a backend API to receive the data, and then properly storing and managing the data.
-- **Data Transformation:** Transforming raw data and telemetry into a usable format took various steps, including analyzing sleep/wake times to determine which days, cross-referencing environmental data with sleep times to determine temperature gradients across sleep cycles.
-- **Complex Data Correlations:** Identifying and analyzing complex correlations between various data points (e.g., how changes in room temperature affect sleep quality) required advanced statistical techniques and machine learning models.
-
+- **Mobile Logging Setup:** To design a logger simple enough to use regularly, I used custom forms in Apple Shortcuts connected to a custom API endpoint in Apps Script. Logging manual metrics now takes just a few seconds.
+- **Data Transformation:** Several transformations were needed to obtain a unified data format and parse timestamps into different sleep intervals/sessions.
 
 # TwoColumns/
 
@@ -103,6 +101,5 @@ Some sample visualizations of sleep data
 - Data Analytics
 - IoT Integration
 - Mobile Interface Design
-- Machine Learning
 - Data-Driven Process Improvement
 # TwoColumns/

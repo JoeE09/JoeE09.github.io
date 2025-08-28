@@ -17,7 +17,7 @@ title: Home Lab Infrastructure
 
 # TwoColumns
 
-### Overview And Technical Constraints
+### Overview
 This lab serves as a foundation for some of my controls/analytics projects. It isolates IoT devices, hosts services, and provides a local messaging/data layer. My main focus for the lab was security, reliability, and maintainability. Below are some project ideas that inspired the lab creation:
 
 - Automated meal planning tools
@@ -44,8 +44,8 @@ This lab serves as a foundation for some of my controls/analytics projects. It i
 - MQTT broker + local SQLite storage in place for downstream projects.
 
 ### Next Steps
-- Formalize backup strategy (config volumes + DB snapshots).
-- Publish a minimal internal status page (service list, links, notes).
+- Formalize backup strategy (config volumes + DB snapshots) in case of Pi failure.
+- Publish a minimal internal status page (service list, links, notes) to assist in system maintenance.
 
 # TwoColumns className="mt-2"
 # Technologies

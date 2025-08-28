@@ -13,12 +13,12 @@ title: Home Environment Controller
 ### My Solution
 - Built an environment control system with Raspberry Pi hub, ESP32 sensors, and smart devices.
 - Implemented centralized data collection and storage
-- Developed automations and rules for adjusting settings based on real-time data
-- Created dashboards for visualizing data and managing settings
+- (Planned) Develop automations and rules for adjusting settings based on real-time data
+- (Planned) Create dashboards for visualizing data and managing settings
 
 
-### Overview And Technical Constraints
-I was inspired to do this project both to sharpen my system design skills and to have control over my living environment.
+### Overview
+This project aims to create a comprehensive system for monitoring and controlling my home environment.
 - Desire to optimize my living environment (ensure clean air, proper humidity, ideal temperature)
 - Curiosity about my environment (e.g. humidity/temperature variation across rooms, air quality)
 - Desire to understand how environmental factors impact comfort and energy usage. For example, I'd like to determine how the temperature throughout the night affects sleep quality, and maybe experiment with different automated thermostat settings during the night.
