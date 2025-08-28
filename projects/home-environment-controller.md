@@ -32,7 +32,7 @@ I was inspired to do this project both to sharpen my system design skills and to
 - **Python Scripts:** API-based data retrieval and device control (e.g. pulling local weather, controlling smart devices).
 - **Smart Devices:** Currently a smart thermostat/smart plugs (connected to dehumidifier) for controlling temp/humidity.
 - **Notification Service:** Sending alerts and notifications based on environmental changes.
-- **Dashboard:** Visualizing environmental data and system status, setting environmental set points and thresholds, and creating automation schedules in a user-friendly interface (Like an HMI).
+- **Dashboard:** Visualizing environmental data and system status, setting environmental set points and thresholds, and creating automation schedules in a user-friendly interface.
 
 ### Main Features
 - Real-time monitoring of environmental data.

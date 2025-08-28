@@ -5,102 +5,62 @@ title: Home Lab Infrastructure
 # Hero
 
 ### The Problem
-- I wanted to do some IoT projects but needed to keep the network secure and isolated.
-- I wanted to gather telemetry data from various sensors (e.g. ESP32) and needed a 24/7 data collection and monitoring solution.
-- I wanted a lab to experiment with various self-hosted solutions for applications and tools.
+- I wanted to pursue IoT projects without exposing my home network to potential threats.
+- I needed an always-on backbone to host apps and collect telemetry data from various sensors.
+- I wanted a lab to experiment with various self-hosted applications and tools.
 
 ### My Solution
-- Developed collections of scripts and macros to automate manual tasks
-- Enabled team to draw insight from data without tedious manual processing
-- Built automated data pipeline to view agent performance over time
+- Developed a home lab with a Raspberry Pi and Docker for testing and experimentation.
+- Segmented the network with VLANs and firewalls; managed Wi-Fi/LAN with an Omada controller.
+- Enabled zero-trust remote access via Tailscale VPN (no public ports).
+- Provisioned an MQTT broker and local SQLite storage to serve as the messaging & data layer for future projects.
 
 # TwoColumns
 
 ### Overview And Technical Constraints
-I built several scripts and tools in this project to automate manual tasks and extract new insights from data. Here are some key constraints I worked within:
-- Must be within Microsoft Office and Google Apps ecosystems (IT restrictions)
-- No databases (SQL, NoSQL, etc.) could be used. Data was Excel or Google Sheets based
-- Needed to integrate with their current dashboards and interfaces
-- Built for non-technical users (minimal input to run scripts)
+This lab serves as a foundation for some of my controls/analytics projects. It isolates IoT devices, hosts services, and provides a local messaging/data layer. My main focus for the lab was security, reliability, and maintainability. Below are some project ideas that inspired the lab creation:
+
+- Automated meal planning tools
+- Environmental monitoring systems
+- Smart home hub / automations
+- Home security and surveillance
+- Personal cloud storage
+- Other IoT projects or self-hosted applications
 
 ### Main Tools Used
-- **Power Automate Desktop:** Automating desktop-based tasks like preparing survey reports and cleaning data. Integrated with Excel/VBA for manipulating data.
-- **Office Scripts:** Automating tasks in SharePoint-based files, integrating with the cloud. Automated manual cleaning and formatting tasks.
-- **Google Apps Script:** Automating tasks in Google Sheets / Gmail, including semi-automated email notifications for quality issues.
-- **APIs:** Some data required integration with the customer service platform's API (Genesys). Used JavaScript/Python to collect and process API data, then integrated it into an Excel dashboard.
-- **Power Query and Power Pivot:** Used for data transformation and creation of helpful visuals.
+- **Network Segmentation:** VLANs to isolate networks with controller-based and device-based firewalls for enhanced security.
+- **Tailscale VPN:** For remote access without exposing the lab to the public internet.
+- **Raspberry Pi:** Serving as a central hub for data collection, running Docker containers, and hosting various services.
+- **Headless Linux Admin:** SSH-based management and automation on the Raspberry Pi.
+- **Messaging & Storage Backbone:** Mosquitto (MQTT) on the Pi and a local SQLite DB.
+- **Docker:** Containerized applications for easy deployment and management.
 
 # TwoColumns/
 
+### Current Functionality
+- Pi home lab online; services run in Docker.
+- VLAN-segmented network with controller management.
+- Tailscale VPN for remote admin.
+- MQTT broker + local SQLite storage in place for downstream projects.
 
-# ![Flowchart of the automation pipeline](/images/projectPages/qa-data-automations-flowchart.svg) className="max-w-3xl mx-auto"
-Flowchart of the automation pipeline
-
-
-# TwoColumns className="mt-10"
-
-# ![Summary performance board](/images/projectPages/qa-evaluation-sheet.png)
-Evaluators used Excel with formatting rules to quickly scan and highlight agent performance
-
-### Features
-- **Minimal User Input:**  
-  Aside from some confirmation steps, most automations required only a couple clicks to run.
-
-- **Directly Integrated Data Analysis:**  
-  Data was processed and visualized directly in their existing main Excel sheets and dashboards, so users didn't have to switch tools or learn new interfaces.
-
-- **Semi-Automated Email Alerts:**  
-  Survey issues could be flagged with a single click, sending the relevant supervisor a pre-formatted email with relevant details.
-
-- **Agent Performance Metric Tracking:**  
-  Integration with the Genesys API allowed seamless tracking of agent performance, helping identify most needed areas for improvement.
-
-- **Custom Scripts:**  
-  Based on supervisor requests, I developed other custom scripts to automate specific tasks like generating reports and cleaning data.
-
-### Technical Challenges
-- **Integration with the Genesys API:**  
-    To develop an effective pipeline that didn't require manual intervention, the data retrieval program required multiple chained API calls and complex JSON parsing.
-- **Data Visualization:**  
-    Agent performance data had a wide range of inputs like question types and departments. Dividing and presenting the data in a comprehensive yet digestable format required careful planning and design.
-- **Data on Multiple Platforms:**  
-    Since data was stored in multiple ways (SharePoint, Network Drive, Google Sheets), a variety of tools were needed to ensure that data sources were integrated properly.
-- **Ease of Maintenance and Sustainability:**  
-    As the sole developer in the group, I had to make sure that the code was simple to understand and manage. This required making clear documentation and tutorials to clearly explain key inputs.
-
-# ![Agent performance trend dashboards](/images/projectPages/qa-data-agent-trends.png)
-The agent performance trend dashboard and tables were directly in Excel, allowing easy access for the non-technical team supervisors
-
-# TwoColumns/
-
-### Possibilities to Extend class="max-w-3xl mx-auto"
-- **Custom Configuration Interface:**  
-  Some of the automation code required periodic configuration updates. Having a simple interface to manage configuration would allow non-technical users to easily change settings without touching the code.
-- **More Flexible Data Checks:**  
-    Some Excel scripts had hardcoded data checks. Adding more flexibility to some scripts (e.g. automatic column mapping) would keep the system more adaptable to future changes without manually editing code.
-- **Custom Interactive Data Dashboards:**  
-    While the current Excel-based dashboards were powerful (with custom slicers/filters), the overall UI could have been improved by integrating with Power BI or a custom web dashboard.
-- **Automated Data Analysis and Insights:**  
-  Adding some automated agent performance checks to automatically flag issues would allow supervisors to focus on key issues with minimal manual analysis.
-- **AI Integration:**  
-  Integrating tools like Azure AI, OpenAI, or Zapier could further automate data analysis. For example, AI could categorize survey comments and flag feedback needing supervisor attention.
+### Next Steps
+- Formalize backup strategy (config volumes + DB snapshots).
+- Publish a minimal internal status page (service list, links, notes).
 
 # TwoColumns className="mt-2"
 # Technologies
-- Excel
-- Office Scripts
-- Power Automate
-- SharePoint
-- Google Apps Script
-- JavaScript
-- Python
-- API Integration
+- Raspberry Pi
+- SQL
+- MQTT
+- Linux
+- Tailscale
+- Docker
 
 # Skills
-- Business Process Automation
-- Script Development
-- Data Pipeline Design
-- Data Visualization
-- JSON Parsing and Transformation
-- Cross-Platform Integration
+- Network Configuration & Security
+- Linux System Administration
+- Containerization
+- IoT Device Management
+- Self-Hosted Solutions
+
 # TwoColumns/
