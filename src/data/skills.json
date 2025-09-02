@@ -259,9 +259,9 @@
       "priority": 3,
       "categories": {
         "controls": {
-          "bullets": ["Integrations for sensor nodes and IoT experiments"]
+          "bullets": ["Integrations for sensor nodes and IoT experiments"],
+          "projects": ["home-environment-controller", "sleep-trend-analyzer"]
         },
-        "projects": ["home-environment-controller", "sleep-trend-analyzer"]
       }
     },
     {
