@@ -12,6 +12,8 @@ I'm a mechanical engineer that specializes in designing tools to eliminate repet
 
 I'm Joseph, a mechanical engineering graduate with a broad skillset encompassing mechanical design, controls, software development, automation, and data analytics. I develop tools and systems that enable teams to accomplish more with fewer errors, create data pipelines that enable better decision-making, and more. My work has been in engineering, business, and personal environments.
 
+I'm Joseph, a mechanical engineering graduate with a broad skillset encompassing mechanical design, controls, software development, automation, and data analytics. I develop tools and systems that enable teams to accomplish more with fewer errors and make data-driven decisions. I have worked in both engineering and business settings.
+
 I'm Joseph, a mechanically-trained engineer with a passion for leveraging the most effective tools to maximize results in any environment from engineering to business. My skillset spans from mechanical design to automation and controls to programming, with the aim of finding a role at the intersection of engineering and software - whether in controls, operations, analytics, or manufacturing.
 
 I'm a mechanically trained engineer who is continually finding ways to optimize processes around me, whether through data pipelines, automated workflows, custom apps, add-ins, or other tools. My skillset lies in applying whatever tool - whether programming, controls, design, or analytics, to best solve problems in front of me and extend system capabilities.

@@ -73,7 +73,7 @@ export default function HomePage() {
             </AnimatedText>
             <AnimatedText delayStep={0.017} baseDelay={2.6} alternate="word" translateAmount={8} translateDirection = "X" duration={0.6}>
               <p className="text-md text-gray-400">
-                I'm Joseph, a mechanical engineering graduate with a broad skillset encompassing mechanical design, controls, software development, automation, and data analytics. I develop tools and systems that enable teams to accomplish more with fewer errors, or create data pipelines that allow enable better decision-making. My work has been in engineering, business, and personal environments.
+                I'm Joseph, a mechanical engineering graduate with a broad skillset encompassing mechanical design, controls, software development, automation, and data analytics. I develop tools and systems that enable teams to accomplish more with fewer errors and make data-driven decisions. I have worked in both engineering and business settings.
               </p>
             </AnimatedText>
           </div>

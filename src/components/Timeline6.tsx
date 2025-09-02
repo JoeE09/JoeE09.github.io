@@ -124,13 +124,12 @@ const timelineData = [
   },
   {
     title: "Other Projects",
-    years: "Ages 14-Present",
-    description: `Involved myself in personal engineering pursuits, from FTC robotics in high school to now developing a smart home environment controller and home lab.`,
+    years: "2016-Present",
+    description: `Involved myself in personal engineering pursuits, from high school robotics to personal projects.`,
     bullets: [
-      "Wrote FTC robotics programs with Java and Android Studio",
-      "Made 3D-printed robot parts designed in Creo / Fusion 360",
+      "Did Java/Android Studio Programming and 3D Printing / CAD Design in FTC robotics",
       "Developed custom productivity tools and web apps",
-      "Designed a multi-room smart home environment controller"
+      "Experimented with microcontrollers and IoT devices"
     ],
     picture: "/images/IMG_0400.JPG",
   }
