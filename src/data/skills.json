@@ -261,7 +261,7 @@
         "controls": {
           "bullets": ["Integrations for sensor nodes and IoT experiments"],
           "projects": ["home-environment-controller", "sleep-trend-analyzer"]
-        },
+        }
       }
     },
     {
