@@ -1,6 +1,4 @@
 import ProjectHero from "@/components/ProjectHero";
-import Links from "@/components/ProjectLinks";
-import VideoDemo from "@/components/VideoDemo";
 import TechnologiesList from "@/components/TechnologiesList";
 import SkillsList from "@/components/SkillsList";
 import { useRef } from "react";

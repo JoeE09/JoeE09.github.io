@@ -96,7 +96,7 @@ export default function App() {
         © 2025 Joseph Ensminger
         <small className="text-gray-400 text-xs mt-8 block text-center">
           All trademarks and logos are the property of their respective owners and are used here for informational and educational purposes only. {" "}
-          <Link to="/icons" className="text-gray-500 underline">
+          <Link to="/icons" target="_blank" rel="noopener noreferrer" className="text-gray-500 underline">
             View icon attributions
           </Link>
           .
