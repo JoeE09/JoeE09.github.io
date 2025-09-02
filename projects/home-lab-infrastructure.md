@@ -1,5 +1,6 @@
 ---
 title: Home Lab Infrastructure
+banner: /images/omada.png
 ---
 
 # Hero

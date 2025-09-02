@@ -45,7 +45,7 @@
     "slug": "home-environment-controller",
     "title": "Home Environment Controller",
     "description": "An IoT-based system that monitors and controls home environmental factors with automated alerts, smart devices, and dashboards",
-    "imageUrl": "/images/projectCards/home-environment-controller.svg",
+    "imageUrl": "/images/home-icon.svg",
     "status": "In Progress",
     "company": "Personal"
   },
@@ -53,7 +53,7 @@
     "slug": "home-lab-infrastructure",
     "title": "Home Lab Infrastructure",
     "description": "A self-hosted home lab providing secure networking, containerized services, local data storage, and IoT integration via Raspberry Pi.",
-    "imageUrl": "/images/projectCards/home-lab-infrastructure.svg",
+    "imageUrl": "/images/infra-test.png",
     "status": "In Progress",
     "company": "Personal"
   },

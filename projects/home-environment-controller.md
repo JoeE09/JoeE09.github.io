@@ -1,5 +1,7 @@
 ---
 title: Home Environment Controller
+banner: /images/iot-sketch.png
+banner-credit: 'Image by <a href="https://pixabay.com/users/thedigitalartist-202249/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8045000">Pete Linforth</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8045000">Pixabay</a>'
 ---
 
 # Hero

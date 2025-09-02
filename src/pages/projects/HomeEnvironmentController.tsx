@@ -11,7 +11,7 @@ export default function HomeEnvironmentController() {
     <div className="bg-white text-gray-900">
       <ProjectHero  
         sectionRef={sectionRef}
-        bannerImage="/images/projectPages/home-environment-controller-banner.png"
+        bannerImage="/images/iot-sketch.png"
         animationDelay={0.01}
         title="Home Environment Controller"
         hero={{

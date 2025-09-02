@@ -11,7 +11,7 @@ export default function HomeLabInfrastructure() {
     <div className="bg-white text-gray-900">
       <ProjectHero  
         sectionRef={sectionRef}
-        bannerImage="/images/projectPages/home-lab-infrastructure-banner.png"
+        bannerImage="/images/omada.png"
         animationDelay={0.01}
         title="Home Lab Infrastructure"
         hero={{
