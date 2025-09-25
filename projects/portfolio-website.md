@@ -2,7 +2,7 @@
 title: My Portfolio Website
 ---
 
-## My Portfolio Website className="text-center font-extrabold text-4xl text-customGreen mb-12"
+## My Portfolio Website className="text-center font-extrabold text-4xl text-lighterGreen mb-12"
 
 # Div className="max-w-3xl mx-auto mb-6" 
 ### Overview

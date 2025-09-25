@@ -7,7 +7,7 @@ export default function SleepTrendAnalyzer() {
   const sectionRef = useRef<HTMLDivElement>(null);
   return (
     <div className="bg-white text-gray-900">
-      <ProjectHero textClass="text-gray-200 space-y-1" headerClass="font-bold text-lg text-gray-200 mb-2" titleClass="text-4xl relative font-extrabold text-customGreen mb-6 text-center drop-shadow-glow" 
+      <ProjectHero textClass="text-gray-200 space-y-1" headerClass="font-bold text-lg text-gray-200 mb-2" titleClass="text-4xl relative font-extrabold text-lighterGreen mb-6 text-center drop-shadow-glow" 
         sectionRef={sectionRef}
         bannerImage="/images/projectPages/sleep-tracker-banner.png"
         animationDelay={0.01}

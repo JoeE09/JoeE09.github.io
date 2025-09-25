@@ -3,7 +3,7 @@ title: Sleep Trend Analyzer
 banner: /images/projectPages/sleep-tracker-banner.png
 ---
 
-# Hero textClass="text-gray-200 space-y-1" headerClass="font-bold text-lg text-gray-200 mb-2" titleClass="text-4xl relative font-extrabold text-customGreen mb-6 text-center drop-shadow-glow"
+# Hero textClass="text-gray-200 space-y-1" headerClass="font-bold text-lg text-gray-200 mb-2" titleClass="text-4xl relative font-extrabold text-lighterGreen mb-6 text-center drop-shadow-glow"
 
 ### The Problem
 - I have trouble with consistent sleep and feeling refreshed in the morning

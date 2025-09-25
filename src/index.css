@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-    --color-customGreen: #008f5c;
+    --color-customGreen: #1B5D3E;
+    --color-lighterGreen: #2E785C;
 }
 
 @layer utilities {

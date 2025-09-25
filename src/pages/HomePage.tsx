@@ -62,7 +62,7 @@ export default function HomePage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] max-w-[700px] aspect-square bg-white/10 blur-3xl rounded-full z-0 animate-delayed-fade opacity-0"></div>
 
         <div className="mx-auto z-10 relative text-center">
-          <h2 className="text-5xl md:text-6xl font-extrabold mb-6 text-customGreen text-center drop-shadow-glow">
+          <h2 className="text-5xl md:text-6xl font-extrabold mb-6 text-lighterGreen text-center drop-shadow-glow">
             <AnimatedText delayStep={0.35} duration={0.7} translateAmount={-15}>Engineer. Automator. Analyst.</AnimatedText>
           </h2>
           <div className="max-w-2xl mx-auto text-center">

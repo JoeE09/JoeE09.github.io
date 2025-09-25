@@ -18,7 +18,7 @@ export default function PortfolioWebsite() {
           overlayOpacity={0.5} />
         <div className="max-w-5xl mx-auto z-10 text-center">
           <AnimatedText baseDelay={0.01} delayStep={0.1} duration={1.5} translateAmount={-20}>
-            <h1 className="text-4xl relative font-extrabold text-customGreen mb-6 drop-shadow-glow">
+            <h1 className="text-4xl relative font-extrabold text-lighterGreen mb-6 drop-shadow-glow">
               My Portfolio Website
             </h1>
           </AnimatedText>
